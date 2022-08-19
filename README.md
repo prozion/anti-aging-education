@@ -67,4 +67,4 @@
 
 ### Инженерия знаний
 
-* [Графы знаний, Галкин М.Л., ИТМО](https://www.youtube.com/playlist?list=PLlmfdv64-P33ROIzuATAWEp0V1jMXAoj_)
+* [Графы знаний, Галкин М.Л., ИТМО](https://www.youtube.com/playlist?list=PLlmfdv64-P33ROIzuATAWEp0V1jMXAoj_) (11 лекций, 12 часов)
