@@ -35,7 +35,7 @@
 * Фармакология
 * Нанотехнологии
 
-<b>Биоинформатик</b>
+<b>Антиэйдж-информатик</b>
 * [Основы Computer Science](основы-computer-science)
 * [Язык программирования Python](язык-программирования-python)
 * [Функциональное программирование](функциональное-программирование)
@@ -49,6 +49,8 @@
 * [100 часов школьной биологии, Дубынин В.А., МГУ - 2](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDiVZaaNUWI0vEKdKZv5J8U) (11 уроков, 16 часов)
 
 * [Общая биология, Асеев В.В., МГУ](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDiVZaaNUWI0vEKdKZv5J8U) (13 лекций, 19 часов)
+
+* [Introduction to Biology, Eric Lander, MIT](https://www.edx.org/course/introduction-to-biology-the-secret-of-life-3) (16 недель, 5-10 часов в неделю)
 
 ### Основы Computer Science
 
