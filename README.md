@@ -36,8 +36,9 @@
 * Нанотехнологии
 
 <b>Биоинформатик</b>
+* [Основы Computer Science](основы-computer-science)
 * Функциональное программирование
-* [Язык программирования Питон](язык-программирования-питон)
+* [Язык программирования Python](язык-программирования-python)
 * Машинное обучение
 
 --------------------------
@@ -49,6 +50,10 @@
 
 * [Общая биология, Асеев В.В., МГУ](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDiVZaaNUWI0vEKdKZv5J8U) (13 лекций, 19 часов)
 
-### Язык программирования Питон
+### Основы Computer Science
 
-* [Основы языка Питон](https://ru.hexlet.io/courses/python-basics) (~56 часов обучения)
+* [Введение в программирование, Hexlet](https://ru.hexlet.io/courses/introduction_to_programming) (~24 часов обучения)
+
+### Язык программирования Python
+
+* [Основы языка Python, Hexlet](https://ru.hexlet.io/courses/python-basics) (~56 часов обучения)
