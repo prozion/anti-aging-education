@@ -49,4 +49,4 @@
 
 ### Язык программирования Питон
 
-* [[Основы языка Питон]](https://ru.hexlet.io/courses/python-basics)
+* [Основы языка Питон](https://ru.hexlet.io/courses/python-basics) (~56 часов обучения)
