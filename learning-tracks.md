@@ -20,6 +20,7 @@ flowchart TD
     Chorg[Органическая химия]:::href
     Chq[Квантовая химия]:::href
     Bioch[Биохимия]:::href
+    Genb[Общая биология]:::href
     Molb[Молекулярная биология]:::href
     Cyt[Цитология]:::href
     Gen[Генетика]:::href
@@ -40,13 +41,14 @@ flowchart TD
     classDef cond stroke-dasharray:3,opacity:0.8
     classDef href color:#0969D7
 
-    class Mgen,Phgen,Chgen,Teorp cond
+    class Mgen,Phgen,Chgen,Genb,Teorp cond
 
     click Chgen href "https://github.com/prozion/anti-aging-education/#общая-химия" _blank
     click Chnorg href "https://github.com/prozion/anti-aging-education/#неорганическая-химия" _blank
     click Chorg href "https://github.com/prozion/anti-aging-education/#органическая-химия" _blank
     click Chq "https://github.com/prozion/anti-aging-education/#квантовая-химия" _blank
     click Bioch "https://github.com/prozion/anti-aging-education/#биохимия" _blank
+    click Genb "https://github.com/prozion/anti-aging-education/#общая-биология" _blank
     click Molb "https://github.com/prozion/anti-aging-education/#молекулярная-биология" _blank
     click Cyt "https://github.com/prozion/anti-aging-education/#цитология" _blank
     click Gen "https://github.com/prozion/anti-aging-education/#генетика" _blank
