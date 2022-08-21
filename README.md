@@ -56,12 +56,15 @@
 * [Цитология](#цитология)
 * Аналитическая химия
 * [Физическая химия](#физическая-химия)
-* Квантовая химия
+* [Химическая термодинамика](#химическая-термодинамика)
+* Статистическая физика
+* [Квантовая химия](#квантовая-химия)
 * [Строение молекул](#строение-молекул)
 * Биоорганическая химия
 * [Кристаллохимия](#кристаллохимия)
 * [Органический синтез](#органический-синтез)
 * Фармакология
+* [Химическая технология](#химическая-технология)
 * [Нанохимия и нанотехнологии](#нанохимия-и-нанотехнологии)
 * [Инженерная энзимология](#инженерная-энзимология)
 
@@ -113,6 +116,9 @@
 ### Биохимия
 
 * [Введение в биорганическую химию, Шноль С.Э., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNAxcnQljyEH4AxVyMRBqJq_) (8 лекций, 11 часов) - <i>Фактически, история биохимии</i>
+* [Биохимия, Гладилин А.К., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNAr3oCbu46cYVR_cGOY0tI1) (25 лекций, 29 часов)
+* [Биоорганическая химия I, Зык Н.В., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNCbic22WnhfoL7k_xlmLur8) (19 лекций, 23 часа)
+* [Биоорганическая химия II, Зык Н.В., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfND2es6QmFfBbLoIeNzdpFWx) (10 лекций, 12 часов 30 минут)
 
 Книги
 
@@ -151,6 +157,10 @@
 ### Инженерная энзимология
 
 * [Инженерная энзимология и аналитическая биотехнология, Курочкин И.Н., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNBvR2qhdwSzzb6hlnNaJLD8) (4 лекции, 4 часа)
+
+### Квантовая химия
+
+* [Квантовая химия, Новаковская Ю.В., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNAXa-EZeVmFijBKZ4rG7-ck) (13 лекций, 19 часов)
 
 ### Кристаллохимия
 
@@ -191,6 +201,7 @@
 * [Неорганическая химия I, Гудилин Е.А., Шевельков А.В., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNC6uqQUAP3j08FZIm_frFrP) (26 лекций, 36 часов)
 * [Неорганическая химия II, Шевельков А.В., Гудилин Е.А., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNAf2VGoLFdqwE2pwykwZi8H) (23 лекции, 32 часа)
 * [Теоретическая неорганическая химия I, Леменовский Д.А., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNBWv5gqr1IUey0CcCBMhKIw) (13 лекций, 17 часов)
+* [Теоретическая неорганическая химия II, Леменовский Д.А., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNCqp4S4Wm0197Us3XeBnRsl) (13 лекций, 15 часов)
 
 ### Общая биология
 
@@ -241,12 +252,18 @@
 
 ### Физическая химия
 
-* [Физическая химия I, Коробов М.В., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDs6zqdpUhHfRh4xbEMIoLD) (25 лекций, 35 часов)
-* [Физическая химия II, Коробов М.В., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNBrBhaaco12BK7VktmAT9hK) (20 лекций, 27 часов)
+* [Физическая химия I, Коробов М.В., МГУ Химфак, 3 курс](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDs6zqdpUhHfRh4xbEMIoLD) (25 лекций, 35 часов)
+* [Физическая химия II, Коробов М.В., МГУ Химфак, 3 курс](https://www.youtube.com/playlist?list=PLcsjsqLLSfNBrBhaaco12BK7VktmAT9hK) (20 лекций, 27 часов)
+* [Химическая термодинамика и кинетика, Успенская И.А., МГУ Химфак, 4 курс](https://www.youtube.com/playlist?list=PLcsjsqLLSfND055iOW8nmyYnBVtNXMOIr) (20 лекций, 25 часов)
 
 ### Функциональное программирование
 
 * [Язык Clojure](https://clojurecourse.by/) (17 часов видео-уроков)
+
+### Химическая технология
+
+* [Химическая технология, Лазоряк Б.И., Хейфец Л.И., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNAXa-EZeVmFijBKZ4rG7-ck) (22 лекции, 31 час)
+
 
 ### Цитология
 
@@ -278,3 +295,11 @@
 
 * [Введение в Git, Hexlet](https://ru.hexlet.io/courses/intro_to_git) (16 уроков, ~18 часов обучения)
 * [Анализ данных в среде R](https://www.youtube.com/playlist?list=PLwwk4BHih4fj1p79gMWSk0M-DaYJ9teiN) (18 уроков, 6 часов)
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
