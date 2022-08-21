@@ -26,8 +26,8 @@ flowchart TD
     Gen[Генетика]:::href
     Epi[Эпигенетика]:::href
 
-    Chgen --> Chq --> Chorg --> Bioch --> Molb --> Cyt
-    Genb --> Molb
+    Chgen <--> Chq --> Chorg --> Bioch --> Molb --> Cyt
+    Genb <--> Molb
     Molb --> Gen --> Epi
     Chq -.-> Chnorg
     Phgen --> Teormech --> Qmech --> Chq
