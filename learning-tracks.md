@@ -40,7 +40,7 @@ flowchart TD
     classDef cond stroke-dasharray:3,opacity:0.8
     classDef href color:#0969D7
 
-    class Mgen,Phgen,Chgen cond
+    class Mgen,Phgen,Chgen,Teorp cond
 
     click Chgen href "https://github.com/prozion/anti-aging-education/#общая-химия" _blank
     click Chnorg href "https://github.com/prozion/anti-aging-education/#неорганическая-химия" _blank
