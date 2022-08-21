@@ -5,7 +5,7 @@
 ## Понять, как работает клетка
 
 ```mermaid
-flowchart LR;
+flowchart DT;
     Mgen[Высшая математика]:::cond;
     Phgen[Общая физика]:::cond;
     Phq[Квантовая физика];
