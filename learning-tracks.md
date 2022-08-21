@@ -5,37 +5,37 @@
 ## Понять, как работает клетка
 
 ```mermaid
-flowchart TD;
-    Mgen[Высшая математика]:::cond;
+flowchart TD
+    Mgen[Высшая математика]:::cond
     Linal[Линейная алгебра]
     Diffur[Дифференциальные уравнения]
     Tfkp[ТФКП]
-    Phgen[Общая физика]:::cond;
+    Phgen[Общая физика]:::cond
     Teormech[Теоретическая механика]
-    Qmech[Квантовая механика];
-    Phq[Квантовая физика];
-    Chgen[Общая химия]:::cond;
-    Chnorg[Неорганическая химия];
-    Chorg[Органическая химия];
-    Chq[Квантовая химия];
-    Bioch[Биохимия];
-    Molb[Молекулярная биология]
-    Cyt[Цитология]
-    Gen[Генетика]
-    Epi[Эпигенетика]
+    Qmech[Квантовая механика]
+    Phq[Квантовая физика]
+    Chgen[Общая химия]:::cond:::href
+    Chnorg[Неорганическая химия]:::href
+    Chorg[Органическая химия]:::href
+    Chq[Квантовая химия]:::href
+    Bioch[Биохимия]:::href
+    Molb[Молекулярная биология]:::href
+    Cyt[Цитология]:::href
+    Gen[Генетика]:::href
+    Epi[Эпигенетика]:::href
 
-    Chgen --> Chq --> Chorg --> Bioch --> Molb --> Cyt;
-    Molb --> Gen --> Epi;
-    Chq -.-> Chnorg;
-    Phgen --> Teormech --> Qmech --> Chq;
-    Mgen --> Diffur --> Qmech;
-    Mgen --> Linal;
-    Mgen --> Tfkp;
-    Qmech -.-> Phq;
-    Linal --> Qmech;
-    Tfkp --> Qmech;
+    Chgen --> Chq --> Chorg --> Bioch --> Molb --> Cyt
+    Molb --> Gen --> Epi
+    Chq -.-> Chnorg
+    Phgen --> Teormech --> Qmech --> Chq
+    Mgen --> Diffur --> Qmech
+    Mgen --> Linal
+    Mgen --> Tfkp
+    Qmech -.-> Phq
+    Linal --> Qmech
+    Tfkp --> Qmech
 
-    classDef cond stroke-dasharray:3,opacity:0.8;
+    classDef cond stroke-dasharray:3,opacity:0.8
 
     click Chgen href "https://github.com/prozion/anti-aging-education/#общая-химия" _blank
     click Chnorg href "https://github.com/prozion/anti-aging-education/#неорганическая-химия" _blank
