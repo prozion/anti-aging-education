@@ -9,7 +9,7 @@ flowchart TD;
     Mgen[Высшая математика]:::cond;
     Linal[Линейная алгебра]
     Diffur[Дифференциальные уравнения]
-    Tfkp[Теория функций комплексного переменного]
+    Tfkp[ТФКП]
     Phgen[Общая физика]:::cond;
     Teormech[Теоретическая механика]
     Qmech[Квантовая механика];
@@ -34,6 +34,7 @@ flowchart TD;
 
     classDef cond stroke-dasharray:3;
 
+    click Tfkp "https://github.com/prozion/anti-aging-education/#теория-функции-комплексного-переменного" "Теория функций комплексного переменного"
     click Chorg "https://github.com/prozion/anti-aging-education/#органическая-химия" _blank
     click Chq "https://github.com/prozion/anti-aging-education/#квантовая-химия" _blank
 ```
