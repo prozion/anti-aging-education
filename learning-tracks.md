@@ -4,6 +4,12 @@
 
 ## Понять, как работает клетка
 
+<script>
+  var callback = function () {
+      alert('A callback was triggered');
+  };
+</script>
+
 ```mermaid
 flowchart TD;
     Mgen[Высшая математика]:::cond;
@@ -34,7 +40,7 @@ flowchart TD;
 
     classDef cond stroke-dasharray:3;
 
-    click Tfkp "https://github.com/prozion/anti-aging-education/#теория-функции-комплексного-переменного" "Теория функций комплексного переменного"
+    click Tfkp callback "Теория функций комплексного переменного"
     click Chorg "https://github.com/prozion/anti-aging-education/#органическая-химия" _blank
     click Chq "https://github.com/prozion/anti-aging-education/#квантовая-химия" _blank
 ```
