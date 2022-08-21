@@ -11,6 +11,7 @@ flowchart TD;
     Diffur[Дифференциальные уравнения]
     Tfkp[Теория функций комплексного переменного]
     Phgen[Общая физика]:::cond;
+    Teormech[Теоретическая механика]
     Qmech[Квантовая механика];
     Phq[Квантовая физика];
     Chgen[Общая химия]:::cond;
@@ -25,8 +26,9 @@ flowchart TD;
 
     Chgen --> Chq --> Chorg --> Bioch --> Molb --> Cyt --> Gen --> Epi;
     Chq -.-> Chnorg;
-    Phgen --> Qmech --> Chq;
+    Phgen --> Teormech --> Qmech --> Chq;
     Mgen --> Diffur --> Qmech;
+    Qmech -.-> Phq;
     Linal --> Qmech;
     Tfkp --> Qmech;
 
