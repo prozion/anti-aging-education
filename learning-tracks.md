@@ -14,7 +14,7 @@ flowchart TD
     Teormech[Теоретическая механика]
     Qmech[Квантовая механика]
     Phq[Квантовая физика]
-    Chgen[Общая химия]:::cond:::href
+    Chgen[Общая химия]:::cond,href
     Chnorg[Неорганическая химия]:::href
     Chorg[Органическая химия]:::href
     Chq[Квантовая химия]:::href
