@@ -7,8 +7,12 @@
 ```mermaid
 flowchart TD;
     Mgen[Высшая математика]:::cond;
+    Linal[Линейная алгебра]
+    Diffur[Дифференциальные уравнения]
+    Tfkp[Теория функций комплексного переменного]
     Phgen[Общая физика]:::cond;
-    Phq[Квантовая физика];
+    Qmech[Квантовая механика];
+    /* Phq[Квантовая физика]; */
     Chgen[Общая химия]:::cond;
     Chnorg[Неорганическая химия];
     Chorg[Органическая химия];
@@ -21,8 +25,10 @@ flowchart TD;
 
     Chgen --> Chq --> Chorg --> Bioch --> Molb --> Cyt --> Gen --> Epi;
     Chq -.-> Chnorg;
-    Phgen --> Phq --> Chq;
-    Mgen --> Phq;
+    Phgen --> Qmech --> Chq;
+    Mgen --> Diffur --> Qmech;
+    Linal --> Qmech;
+    Tfkp --> Qmech;
 
     classDef cond stroke-dasharray:3;
 
