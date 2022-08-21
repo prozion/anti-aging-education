@@ -32,9 +32,9 @@ flowchart TD;
     Linal --> Qmech;
     Tfkp --> Qmech;
 
-    classDef cond stroke-dasharray:3;
+    classDef cond stroke-dasharray:6 2;
 
     click Tfkp callback "Теория функций комплексного переменного"
     click Chorg href "https://github.com/prozion/anti-aging-education/#органическая-химия" _blank
-    click Chq href "https://github.com/prozion/anti-aging-education/#квантовая-химия" _blank
+    click Chq "https://github.com/prozion/anti-aging-education/#квантовая-химия" _blank
 ```
