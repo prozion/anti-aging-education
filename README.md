@@ -298,8 +298,8 @@
 
 ```mermaid
 flowchart LR;
-    Ch[Общая химия] --> Chnonorg[Неорганическая химия] --> Chorg[Органическая химия] --> Chq[Квантовая химия];
-    Mhigh[Высшая математика] --> Phq[Квантовая физика] --> Chq;
-    Ph[Общая физика] --> Phq;
-    click Chorg "#органическая-химия"
+    Chgen[Общая химия] --> Chnorg[Неорганическая химия] --> Chorg[Органическая химия] --> Chq[Квантовая химия];
+    Mgen[Высшая математика] --> Phq[Квантовая физика] --> Chq;
+    Phgen[Общая физика] --> Phq;
+    click Chorg "https://github.com/prozion/anti-aging-education/README.md#органическая-химия" _blank
 ```
