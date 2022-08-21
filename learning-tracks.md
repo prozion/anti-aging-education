@@ -6,15 +6,15 @@
 
 ```mermaid
 flowchart TD
-    Mgen[Высшая математика]:::cond
+    Mgen[Высшая математика]
     Linal[Линейная алгебра]
     Diffur[Дифференциальные уравнения]
     Tfkp[ТФКП]
-    Phgen[Общая физика]:::cond
+    Phgen[Общая физика]
     Teormech[Теоретическая механика]
     Qmech[Квантовая механика]
     Phq[Квантовая физика]
-    Chgen[Общая химия]:::cond,href
+    Chgen[Общая химия]:::href
     Chnorg[Неорганическая химия]:::href
     Chorg[Органическая химия]:::href
     Chq[Квантовая химия]:::href
@@ -37,6 +37,8 @@ flowchart TD
 
     classDef cond stroke-dasharray:3,opacity:0.8
     classDef href color:#0969D7
+
+    class Mgen,Phgen,Chgen cond
 
     click Chgen href "https://github.com/prozion/anti-aging-education/#общая-химия" _blank
     click Chnorg href "https://github.com/prozion/anti-aging-education/#неорганическая-химия" _blank
