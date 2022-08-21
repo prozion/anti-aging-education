@@ -295,11 +295,3 @@
 
 * [Введение в Git, Hexlet](https://ru.hexlet.io/courses/intro_to_git) (16 уроков, ~18 часов обучения)
 * [Анализ данных в среде R](https://www.youtube.com/playlist?list=PLwwk4BHih4fj1p79gMWSk0M-DaYJ9teiN) (18 уроков, 6 часов)
-
-```mermaid
-flowchart LR;
-    Chgen[Общая химия] --> Chnorg[Неорганическая химия] --> Chorg[Органическая химия] --> Chq[Квантовая химия];
-    Mgen[Высшая математика] --> Phq[Квантовая физика] --> Chq;
-    Phgen[Общая физика] --> Phq;
-    click Chorg "https://github.com/prozion/anti-aging-education/#органическая-химия" _blank
-```
