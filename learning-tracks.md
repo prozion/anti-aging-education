@@ -14,8 +14,12 @@ flowchart LR;
     Chorg[Органическая химия];
     Chq[Квантовая химия];
     Bioch[Биохимия];
+    Molb[Молекулярная биология]
+    Cyt[Цитология]
+    Gen[Генетика]
+    Epi[Эпигенетика]
 
-    Chgen --> Chq --> Chorg --> Bioch;
+    Chgen --> Chq --> Chorg --> Bioch --> Molb --> Cyt --> Gen --> Epi;
     Chq -.-> Chnorg;
     Phgen --> Phq --> Chq;
     Mgen --> Phq;
