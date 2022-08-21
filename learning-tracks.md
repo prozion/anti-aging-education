@@ -28,6 +28,8 @@ flowchart TD;
     Chq -.-> Chnorg;
     Phgen --> Teormech --> Qmech --> Chq;
     Mgen --> Diffur --> Qmech;
+    Mgen --> Linal;
+    Mgen --> Tfkp;
     Qmech -.-> Phq;
     Linal --> Qmech;
     Tfkp --> Qmech;
