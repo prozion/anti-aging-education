@@ -298,7 +298,7 @@
 
 ```mermaid
 graph TD;
-    A-->B;
+    [A](https://example.com)-->B;
     A-->C;
     B-->D;
     C-->D;
