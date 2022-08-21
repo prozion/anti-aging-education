@@ -6,10 +6,10 @@
 
 ```mermaid
 flowchart LR;
-    Mgen[Высшая математика];
-    Phgen[Общая физика];
+    Mgen[Высшая математика]:::cond;
+    Phgen[Общая физика]:::cond;
     Phq[Квантовая физика];
-    Chgen[Общая химия];
+    Chgen[Общая химия]:::cond;
     Chnorg[Неорганическая химия];
     Chorg[Органическая химия];
     Chq[Квантовая химия];
@@ -19,6 +19,8 @@ flowchart LR;
     Chq -.-> Chnorg;
     Phgen --> Phq --> Chq;
     Mgen --> Phq;
+
+    classDef cond border:dashed;
 
     click Chorg "https://github.com/prozion/anti-aging-education/#органическая-химия" _blank
     click Chq "https://github.com/prozion/anti-aging-education/#квантовая-химия" _blank
