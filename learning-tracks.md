@@ -13,6 +13,7 @@ flowchart TD
     Phgen[Общая физика]
     Teormech[Теоретическая механика]
     Qmech[Квантовая механика]
+    Teorp[Теория поля]
     Phq[Квантовая физика]
     Chgen[Общая химия]:::href
     Chnorg[Неорганическая химия]:::href
@@ -32,6 +33,7 @@ flowchart TD
     Mgen --> Linal
     Mgen --> Tfkp
     Qmech -.-> Phq
+    Teorp -.-> Phq
     Linal --> Qmech
     Tfkp --> Qmech
 
