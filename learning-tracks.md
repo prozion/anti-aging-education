@@ -20,7 +20,7 @@ flowchart LR;
     Phgen --> Phq --> Chq;
     Mgen --> Phq;
 
-    classDef cond stroke-dasharay:2,2;
+    classDef cond stroke-dasharray:2,2;
 
     click Chorg "https://github.com/prozion/anti-aging-education/#органическая-химия" _blank
     click Chq "https://github.com/prozion/anti-aging-education/#квантовая-химия" _blank
