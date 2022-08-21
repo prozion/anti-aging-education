@@ -31,13 +31,11 @@ flowchart TD
     Molb --> Gen --> Epi
     Chq -.-> Chnorg
     Phgen --> Teormech --> Qmech --> Chq
-    Mgen --> Diffur --> Qmech
-    Mgen --> Linal
-    Mgen --> Tfkp
+    Mgen --> Diffur --> Teormech
+    Mgen --> Linal --> Teormech
+    Mgen --> Tfkp --> Teormech
     Qmech -.-> Phq
     Teorp -.-> Phq
-    Linal --> Qmech
-    Tfkp --> Qmech
 
     classDef cond stroke-dasharray:3,opacity:0.8
     classDef href color:#0969D7
