@@ -301,5 +301,5 @@ flowchart LR;
     Chgen[Общая химия] --> Chnorg[Неорганическая химия] --> Chorg[Органическая химия] --> Chq[Квантовая химия];
     Mgen[Высшая математика] --> Phq[Квантовая физика] --> Chq;
     Phgen[Общая физика] --> Phq;
-    click Chorg "https://github.com/prozion/anti-aging-education/README.md#органическая-химия" _blank
+    click Chorg "https://github.com/prozion/anti-aging-education/#органическая-химия" _blank
 ```
