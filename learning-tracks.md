@@ -8,6 +8,7 @@
 flowchart TD
     Mgen[Высшая математика]
     Linal[Линейная алгебра]
+    Mathan[Математический анализ]
     Diffur[Дифференциальные уравнения]
     Tfkp[ТФКП]
     Phgen[Общая физика]
@@ -31,7 +32,7 @@ flowchart TD
     Molb --> Gen --> Epi
     Chq -.-> Chnorg
     Phgen --> Teormech --> Qmech --> Chq
-    Mgen --> Diffur --> Teormech
+    Mgen --> Mathan --> Diffur --> Teormech
     Mgen --> Linal --> Teormech
     Mgen --> Tfkp --> Teormech
     Qmech -.-> Phq
@@ -42,6 +43,7 @@ flowchart TD
 
     class Mgen,Phgen,Chgen,Genb,Teorp cond
 
+    click Diffur href "https://github.com/prozion/anti-aging-education/#дифференциальные-уравнения" _blank
     click Linal href "https://github.com/prozion/anti-aging-education/#линейная-алгебра" _blank
     click Chgen href "https://github.com/prozion/anti-aging-education/#общая-химия" _blank
     click Chnorg href "https://github.com/prozion/anti-aging-education/#неорганическая-химия" _blank
