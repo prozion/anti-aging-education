@@ -18,17 +18,17 @@
 * Высшая математика
 * Математическая статистика
 * Органическая химия
-* Молекулярная биология
+* [Молекулярная биология](#молекулярная-биология)
 * Биохимия
 * [Цитология](#цитология)
 * Гистология
 * Анатомия человека
 * Нормальная физиология
-* Эмбриология
+* [Эмбриология](#эмбриология)
 * [Генетика](#генетика)
 * [Генная инженерия](#Генная-инженерия)
 * [Эпигенетика](#эпигенетика)
-* Иммунология
+* [Иммунология](#иммунология)
 * [Методы клеточной биологии](#Методы-клеточной-биологии)
 * Системная биология старения
 * [Геронтология](#геронтология)
@@ -48,10 +48,10 @@
 * [Общая химия](#общая-химия)
 * Высшая математика
 * Дифференциальные уравнения
-* Линейная алгебра
+* [Линейная алгебра](#линейная-алгебра)
 * [Неорганическая химия](#неорганическая-химия)
 * [Органическая химия](#органическая-химия)
-* Молекулярная биология
+* [Молекулярная биология](#молекулярная-биология)
 * [Биохимия](#биохимия)
 * [Биофизика](#биофизика)
 * [Бионеорганическая химия](#бионеорганическая-химия)
@@ -73,7 +73,7 @@
 * [Химическая технология](#химическая-технология)
 * [Нанохимия и нанотехнологии](#нанохимия-и-нанотехнологии)
 * [Энзимология](#энзимология)
-* [Инженерная энзимология](#инженерная-энзимология)
+* [Искусственный интеллект в химии](#искусственный-интеллект-в-химии)
 
 ### Антиэйдж-биоинформатик
 
@@ -89,7 +89,7 @@
 * [Общая биология](#общая-биология)
 * [Общая химия](#общая-химия)
 * Аналитическая геометрия
-* Линейная алгебра
+* [Линейная алгебра](#линейная-алгебра)
 * Математический анализ
 * Математическая статистика
 * [Основы Computer Science](основы-computer-science)
@@ -102,6 +102,7 @@
 * [Инженерия знаний](инженерия-знаний)
 * [Моделирование химических структур](#моделирование-химических-структур)
 * [Машинное обучение](#машинное-обучение)
+* [Искусственный интеллект в химии](#искусственный-интеллект-в-химии)
 * Генетические алгоритмы
 * Параллельные вычисления
 * Квантовые вычисления
@@ -112,9 +113,11 @@
 
 ### Аналитическая химия
 
-* [Аналитическая химия, Шеховцова Т.Н., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfND8IuapZOfjuQtbCayF8U_R) (12 лекций, 16 часов)
+* [Аналитическая химия, Шеховцова Т.Н., МГУ Химфак](https://teach-in.ru/course/analitchem) (12 лекций, 16 часов) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfND8IuapZOfjuQtbCayF8U_R)
 
 ### Анатомия
+
+* [100 часов школьной биологии, Человек: анатомия и физиология, Дубынин В.А., МГУ Биофак - 1](https://teach-in.ru/course/one-hundred-hours-of-school-biology) (29 уроков, 33 часа) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDHFikQVZd2XOqF5FK56L3D)
 
 Книги
 
@@ -122,20 +125,22 @@
 
 ### Биоинформатика
 
-* [Биоинформатика, Миронов А.А., МГУ ФБиБ](https://www.youtube.com/playlist?list=PLcsjsqLLSfNCXR1AaXbADeXyQYr96JXke) (17 лекций, 21 час 30 минут)
+* [Биоинформатика, Миронов А.А., МГУ ФББ](https://teach-in.ru/course/bioinformatics-mironov) (17 лекций, 21 час 30 минут) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNCXR1AaXbADeXyQYr96JXke)
 
 ### Бионеорганическая химия
 
-* [Бионеорганическая химия, Милаева Е.Р., МГУ Химфак](https://youtube.com/playlist?list=PLcsjsqLLSfNDOQFu5FLvE3rOF7elegEJb) (7 лекций, 9 часов 30 минут)
+* [Бионеорганическая химия, Милаева Е.Р., МГУ Химфак](https://teach-in.ru/course/bioneorganch) (7 лекций, 9 часов 30 минут) [[youtube]](https://youtube.com/playlist?list=PLcsjsqLLSfNDOQFu5FLvE3rOF7elegEJb)
 
 
 ### Биохимия
 
-* [Введение в биорганическую химию, Шноль С.Э., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNAxcnQljyEH4AxVyMRBqJq_) (8 лекций, 11 часов) - <i>Фактически, история биохимии</i>
-* [Биохимия, Гладилин А.К., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNAr3oCbu46cYVR_cGOY0tI1) (25 лекций, 29 часов)
-* [Биоорганическая химия I, Зык Н.В., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNCbic22WnhfoL7k_xlmLur8) (19 лекций, 23 часа)
-* [Биоорганическая химия II, Зык Н.В., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfND2es6QmFfBbLoIeNzdpFWx) (10 лекций, 12 часов 30 минут)
-* [Химические основы биологических процессов, Копылов А.М, Левашов А.В., МГУ Химфак](https://youtube.com/playlist?list=PLcsjsqLLSfNDFcK0JGTH8ZiISYswBKgHn) (21 лекция, 28 часов)
+* [Введение в биорганическую химию, Шноль С.Э., МГУ Химфак](https://teach-in.ru/course/bioorganic-chemistry) (8 лекций, 11 часов) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNAxcnQljyEH4AxVyMRBqJq_) - <i>Фактически, история биохимии</i>
+* [Биохимия, Гладилин А.К., МГУ Химфак](https://teach-in.ru/course/biochemistry) (25 лекций, 29 часов) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNAr3oCbu46cYVR_cGOY0tI1)
+* [Биоорганическая химия I, Зык Н.В., МГУ Химфак](https://teach-in.ru/course/bioorganic-chemistry-p2) (19 лекций, 23 часа) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNCbic22WnhfoL7k_xlmLur8)
+* [Биоорганическая химия II, Зык Н.В., МГУ Химфак](https://teach-in.ru/course/bioorganic-chemistry-2) (10 лекций, 12 часов 30 минут) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfND2es6QmFfBbLoIeNzdpFWx)
+* [Биохимия, Асеев В.В., МГУ Биофак](https://teach-in.ru/course/biochemistry-aseev-part2) (9 лекций, 13 часов)
+* [Химические основы биологических процессов, Копылов А.М, Левашов А.В., МГУ Химфак](https://teach-in.ru/course/xobp) (21 лекция, 28 часов) [[youtube]](https://youtube.com/playlist?list=PLcsjsqLLSfNDFcK0JGTH8ZiISYswBKgHn)
+* [Внеклеточные нуклеиновые кислоты, Зверева М.Э., МГУ Химфак](https://teach-in.ru/course/chemical-carcinogenesis-zvereva) (5 лекций, 6 часов)
 
 Книги
 
@@ -143,7 +148,12 @@
 
 ### Биофизика
 
+* [Биофизика I, Рубин А.Б., МГУ Биофак](https://teach-in.ru/course/biophysics-rubin-part-1) (13 лекций, 18 часов)
+* [Биофизика I, Рубин А.Б., МГУ Биофак](https://teach-in.ru/course/biophysics-rubin-part-2) (9 лекций, 13 часов)
+
 ### Вирусология
+
+* [Вирусология, Карпова О.В., МГУ Биофак](https://teach-in.ru/course/virology) (10 лекций, 14 часов)
 
 Книги
 
@@ -153,9 +163,11 @@
 
 ### Высокомолекулярные соединения
 
-* [Высокомолекулярные соединения, Аржаков М.С, МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNCQkQ3Bd2vbrfSQv2IwGpQf) (17 лекций, 23 часа)
+* [Высокомолекулярные соединения, Аржаков М.С, МГУ Химфак](https://teach-in.ru/course/high-molecular-compound) (17 лекций, 23 часа) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNCQkQ3Bd2vbrfSQv2IwGpQf)
 
 ### Генетика
+
+* [Генетика, Ким А.И., МГУ Биофак](https://teach-in.ru/course/genetics-kim) (12 лекций, 18 часов 30 минут)
 
 Книги
 
@@ -171,38 +183,51 @@
 
 ### Геронтология
 
-* [Геронтология, Фенюк Б.А., МГУ ФБиБ](https://www.youtube.com/playlist?list=PLcsjsqLLSfNAsNTlgoIkFccdyf_0Ehq-w) (10 лекций, 13 часов)
+* [Геронтология, Фенюк Б.А., МГУ ФББ](https://teach-in.ru/course/gerontology) (10 лекций, 13 часов) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNAsNTlgoIkFccdyf_0Ehq-w)
+
+### Иммунология
+
+* [Иммунология, Недоспасов С.А., МГУ Биофак](https://teach-in.ru/course/immunology) (10 лекций, 14 часов)
 
 ### Инженерия знаний
 
 * [Графы знаний, Галкин М.Л., ИТМО](https://www.youtube.com/playlist?list=PLlmfdv64-P33ROIzuATAWEp0V1jMXAoj_) (11 лекций, 12 часов)
 
-### Инженерная энзимология
 
-* [Инженерная энзимология и аналитическая биотехнология, Курочкин И.Н., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNBvR2qhdwSzzb6hlnNaJLD8) (4 лекции, 4 часа)
+### Искусственный интеллект в химии
+
+* [Искусственный интеллект в химии и материаловедении, Королев В.В., МГУ Химфак](https://teach-in.ru/course/ai-in-chemistry-and-materials-science) (17 лекций, 18 часов) [[youtube]](https://youtube.com/playlist?list=PLcsjsqLLSfNDwQTmmSLwoD3TQiihaj3BO)
 
 ### Квантовая химия
 
-* [Квантовая химия, Новаковская Ю.В., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNAXa-EZeVmFijBKZ4rG7-ck) (13 лекций, 19 часов)
-* [Квантовая химия, Степанов Н.Ф., МГУ Химфак](https://youtube.com/playlist?list=PLcsjsqLLSfNACQCU86CGYHXGsEoJVMTJC) (13 лекций, 15 часов)
+* [Квантовая химия, Новаковская Ю.В., МГУ Химфак](https://teach-in.ru/course/quantum-chemistry) (13 лекций, 19 часов) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNAXa-EZeVmFijBKZ4rG7-ck)
+* [Квантовая химия, Степанов Н.Ф., МГУ Химфак](https://teach-in.ru/course/quantum-chemistry-stepanov) (13 лекций, 15 часов) [[youtube]](https://youtube.com/playlist?list=PLcsjsqLLSfNACQCU86CGYHXGsEoJVMTJC)
 
 ### Коллоидная химия
 
-* [Коллоидная химия, Матвеенко В.Н., МГУ Химфак](https://youtube.com/playlist?list=PLcsjsqLLSfNAd4b73wlX17SlcinepJNUN) (13 лекций, 16 часов)
+* [Коллоидная химия, Матвеенко В.Н., МГУ Химфак](https://teach-in.ru/course/colloid-chemistry) (13 лекций, 16 часов) [[youtube]](https://youtube.com/playlist?list=PLcsjsqLLSfNAd4b73wlX17SlcinepJNUN)
 
 ### Кристаллохимия
 
-* [Кристаллохимия, Словохотов Ю.Л., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNA3iLw1oaNj1jiiYRihbqvZ) (15 лекций, 22 часа)
-* [Кристаллохимия, Еремин Н.Н., МГУ Химфак](https://youtube.com/playlist?list=PLcsjsqLLSfNC6eYXYeCI0yW3jfKExqCNk) (13 лекций, 16 часов)
+* [Кристаллохимия, Словохотов Ю.Л., МГУ Химфак](https://teach-in.ru/course/crystal-chemistry) (15 лекций, 22 часа) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNA3iLw1oaNj1jiiYRihbqvZ)
+* [Кристаллохимия I, Еремин Н.Н., МГУ Химфак](https://teach-in.ru/course/crystal-chemistry-eremin) (9 лекций, 11 часов)
+* [Кристаллохимия II, Еремин Н.Н., МГУ Химфак](https://teach-in.ru/course/crystal-chemistry-p2-eremin) (13 лекций, 16 часов) [[youtube]](https://youtube.com/playlist?list=PLcsjsqLLSfNC6eYXYeCI0yW3jfKExqCNk)
+
+### Линейная алгебра
+
+* [Линейная алгебра, Шишкин А.А., МГУ Физфак](https://teach-in.ru/course/linear-algebra-shishkin) (10 лекций, 14 часов)
 
 ### Машинное обучение
 
-* [Машинное обучение в структурной биологии, Головин А.В., МГУ ФБиБ](https://www.youtube.com/playlist?list=PLcsjsqLLSfND6VrwJ_XVkuJnwPZRCKn97) (7 лекций, 10 часов 30 минут)
+* [Машинное обучение в биологии, Пензар Д.Д., МГУ ФББ](https://teach-in.ru/course/machine-learning-in-biology) (14 лекций, 18 часов)
+* [Машинное обучение в структурной биологии, Головин А.В., МГУ ФББ](https://teach-in.ru/course/machine-learning-in-structural-biology) (7 лекций, 10 часов 30 минут) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfND6VrwJ_XVkuJnwPZRCKn97)
 
 ### Методы клеточной биологии
 
-* [Физические методы биохимии, Савицкий А.П., МГУ Химфак](https://youtube.com/playlist?list=PLcsjsqLLSfNC1q-Si3M9iInjN-Dp6u9DK) (12 лекций, 17 часов)
-* [Методы молекулярной биологии, Сергиев П.В., МГУ Химфак](https://youtube.com/playlist?list=PLcsjsqLLSfNDilKLI2pJtkRnK3kVzZaev) (10 лекций, 14 часов)
+* [Физические методы биохимии, Савицкий А.П., МГУ Химфак](https://teach-in.ru/course/biochemistry-savitskiy) (12 лекций, 17 часов) [[youtube]](https://youtube.com/playlist?list=PLcsjsqLLSfNC1q-Si3M9iInjN-Dp6u9DK)
+* [Методы молекулярной биологии, Сергиев П.В., МГУ Химфак](https://youtube.com/playlist?list=PLcsjsqLLSfNDilKLI2pJtkRnK3kVzZaev/) (10 лекций, 14 часов)
+* [Методы исследования единичных биомолекул, Фенюк Б.А., МГУ ФББ](https://teach-in.ru/course/research-methods-for-single-biomolecules) (8 лекций, 11 часов)
+* [Использование рентгеновских лазеров для изучения структуры биообъектов, Шайтан К.В., МГУ Биофак](https://teach-in.ru/course/scientific-report-biology) (1 лекция, 45 минут)
 
 Книги
 
@@ -210,9 +235,11 @@
 
 ### Моделирование химических структур
 
-* [Моделирование структур биополимеров, Головин А.В., МГУ ФБиБ](https://www.youtube.com/playlist?list=PLcsjsqLLSfND7PZXkmTJI4AniRgIuIxrM) (12 лекций, 13 часов)
+* [Моделирование структур биополимеров, Головин А.В., МГУ ФББ](https://teach-in.ru/course/modeling-biopolymer-structures) (12 лекций, 13 часов) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfND7PZXkmTJI4AniRgIuIxrM)
 
 ### Молекулярная биология
+
+* [Молекулярная биология, Асеев В.В., МГУ Биофак](https://teach-in.ru/course/molecular-biology-aseev) (14 лекций, 19 часов)
 
 Книги
 
@@ -230,16 +257,15 @@
 
 ### Неорганическая химия
 
-* [Неорганическая химия I, Гудилин Е.А., Шевельков А.В., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNC6uqQUAP3j08FZIm_frFrP) (26 лекций, 36 часов)
-* [Неорганическая химия II, Шевельков А.В., Гудилин Е.А., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNAf2VGoLFdqwE2pwykwZi8H) (23 лекции, 32 часа)
-* [Теоретическая неорганическая химия I, Леменовский Д.А., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNBWv5gqr1IUey0CcCBMhKIw) (13 лекций, 17 часов)
-* [Теоретическая неорганическая химия II, Леменовский Д.А., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNCqp4S4Wm0197Us3XeBnRsl) (13 лекций, 15 часов)
+* [Неорганическая химия I, Гудилин Е.А., Шевельков А.В., МГУ Химфак](https://teach-in.ru/course/neorgchem1) (27 лекций, 36 часов) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNC6uqQUAP3j08FZIm_frFrP)
+* [Неорганическая химия II, Шевельков А.В., Гудилин Е.А., МГУ Химфак](https://teach-in.ru/course/inorganic-chemistry-p2) (23 лекции, 32 часа) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNAf2VGoLFdqwE2pwykwZi8H)
+* [Теоретическая неорганическая химия I, Леменовский Д.А., МГУ Химфак](https://teach-in.ru/course/theornotorg1) (13 лекций, 17 часов) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNBWv5gqr1IUey0CcCBMhKIw)
+* [Теоретическая неорганическая химия II, Леменовский Д.А., МГУ Химфак](https://teach-in.ru/course/theornotorg2) (13 лекций, 15 часов) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNCqp4S4Wm0197Us3XeBnRsl)
 
 ### Общая биология
 
-* [100 часов школьной биологии, Дубынин В.А., МГУ Биофак - 1](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDHFikQVZd2XOqF5FK56L3D) (29 уроков, 33 часа)
-* [100 часов школьной биологии, Дубынин В.А., МГУ Биофак - 2](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDiVZaaNUWI0vEKdKZv5J8U) (11 уроков, 16 часов)
-* [Общая биология, Асеев В.В., МГУ Биофак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDiVZaaNUWI0vEKdKZv5J8U) (13 лекций, 19 часов)
+* [100 часов школьной биологии, Дубынин В.А., МГУ Биофак - 2](https://teach-in.ru/course/one-hundred-hours-of-school-biology-general-biology) (11 уроков, 16 часов) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDiVZaaNUWI0vEKdKZv5J8U)
+* [Общая биология, Асеев В.В., МГУ Биофак](https://teach-in.ru/course/biology-aseev-for-physicists) (13 лекций, 19 часов) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDiVZaaNUWI0vEKdKZv5J8U)
 * [Introduction to Biology, Eric Lander, MIT](https://www.edx.org/course/introduction-to-biology-the-secret-of-life-3) (16 недель, 5-10 часов в неделю)
 
 Книги
@@ -251,7 +277,7 @@
 
 ### Общая химия
 
-* [Общая химия, Ерёмин В.В., МГУ Физфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDHFikQVZd2XOqF5FK56L3D) (7 уроков, 9 часов 30 минут)
+* [Общая химия, Ерёмин В.В., МГУ Физфак](https://teach-in.ru/course/Genchem) (7 уроков, 9 часов 30 минут) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDHFikQVZd2XOqF5FK56L3D)
 
 Книги
 
@@ -265,37 +291,37 @@
 
 ### Органическая химия
 
-* [Органическая химия I, Лукашев Н.В., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNALYL33eBd-kC4JpfJXMeu7) (24 лекции, 33 часа 30 минут)
-* [Органическая химия II, Лукашев Н.В., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDR6Bv6ZzMiA1ZCWfZqZe9J) (23 лекции, 30 часов 30 минут)
+* [Органическая химия I, Лукашев Н.В., МГУ Химфак](https://teach-in.ru/course/organic-chemistry-p1) (24 лекции, 33 часа 30 минут) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNALYL33eBd-kC4JpfJXMeu7)
+* [Органическая химия II, Лукашев Н.В., МГУ Химфак](https://teach-in.ru/course/organic-chemistry-p2) (23 лекции, 30 часов 30 минут) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDR6Bv6ZzMiA1ZCWfZqZe9J)
 
 
 ### Органический синтез
 
-* [Органический синтез I, Дядченко В.П., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNCkut4Mrh0M3TDaMz42xmA3) (28 лекций, 36 часов)
-* [Органический синтез II, Дядченко В.П., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNB2kdA3bUJ1S2rVzX6Z6ekU) (16 лекций, 23 часа)
+* [Органический синтез I, Дядченко В.П., МГУ Химфак](https://teach-in.ru/course/organic-synthesis-part-1-dyadchenko) (28 лекций, 36 часов) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNCkut4Mrh0M3TDaMz42xmA3)
+* [Органический синтез II, Дядченко В.П., МГУ Химфак](https://teach-in.ru/course/organic-synthesis-part-2-dyadchenko) (16 лекций, 23 часа) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNB2kdA3bUJ1S2rVzX6Z6ekU)
 
 ### Основы Computer Science
 
 * [Введение в программирование, Hexlet](https://ru.hexlet.io/courses/introduction_to_programming) (~24 часов обучения)
-* [Информатика, Миронов А.А., МГУ ФБиБ](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDR0FUWJZIy8BgE1YUAhDXT) (16 лекций, 21 час)
+* [Информатика, Миронов А.А., МГУ ФББ](https://teach-in.ru/course/informatics) (16 лекций, 21 час) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDR0FUWJZIy8BgE1YUAhDXT)
 
 ### Радиохимия
 
-* [Основы радиохимии, Калмыков С.Н., МГУ Химфак](https://youtube.com/playlist?list=PLcsjsqLLSfNBbm20Elsbz0Vz3jCaDiGGj) (13 лекций, 17 часов 30 минут)
+* [Основы радиохимии, Калмыков С.Н., МГУ Химфак](https://teach-in.ru/course/fundamentals-of-radiochemistry) (13 лекций, 17 часов 30 минут) [[youtube]](https://youtube.com/playlist?list=PLcsjsqLLSfNBbm20Elsbz0Vz3jCaDiGGj)
 
 ### Строение молекул
 
-* [Строение молекул, Новаковская Ю.В., МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDGxeTHfnkCcYUHJGsePP5G) (16 лекций, 24 часа)
+* [Строение молекул, Новаковская Ю.В., МГУ Химфак](https://teach-in.ru/course/molecular-structure) (16 лекций, 24 часа) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDGxeTHfnkCcYUHJGsePP5G)
 
 ### Теоретическая механика
 
-* [Теоретическая механика, Форш П.А, МГУ Химфак](https://www.youtube.com/playlist?list=PLcsjsqLLSfNB-O0AhtSPVpiyPJu-_WwSv) (15 лекций, 21 час)
+* [Теоретическая механика, Форш П.А, МГУ Химфак](https://teach-in.ru/course/theoretical-mechanics) (15 лекций, 21 час) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNB-O0AhtSPVpiyPJu-_WwSv)
 
 ### Физическая химия
 
-* [Физическая химия I, Коробов М.В., МГУ Химфак, 3 курс](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDs6zqdpUhHfRh4xbEMIoLD) (25 лекций, 35 часов)
-* [Физическая химия II, Коробов М.В., МГУ Химфак, 3 курс](https://www.youtube.com/playlist?list=PLcsjsqLLSfNBrBhaaco12BK7VktmAT9hK) (20 лекций, 27 часов)
-* [Химическая термодинамика и кинетика, Успенская И.А., МГУ Химфак, 4 курс](https://www.youtube.com/playlist?list=PLcsjsqLLSfND055iOW8nmyYnBVtNXMOIr) (20 лекций, 25 часов)
+* [Физическая химия I, Коробов М.В., МГУ Химфак, 3 курс](https://teach-in.ru/course/physical-chemistry-part-1) (25 лекций, 35 часов) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNDs6zqdpUhHfRh4xbEMIoLD)
+* [Физическая химия II, Коробов М.В., МГУ Химфак, 3 курс](https://teach-in.ru/course/physical-chemistry-p2) (20 лекций, 27 часов) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNBrBhaaco12BK7VktmAT9hK)
+* [Химическая термодинамика и кинетика, Успенская И.А., МГУ Химфак, 4 курс](https://teach-in.ru/course/chemical-thermodynamics) (20 лекций, 25 часов) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfND055iOW8nmyYnBVtNXMOIr)
 
 ### Функциональное программирование
 
@@ -303,7 +329,7 @@
 
 ### Химическая технология
 
-* [Химическая технология, Лазоряк Б.И., Хейфец Л.И., МГУ Химфак](https://youtube.com/playlist?list=PLcsjsqLLSfNBsSHa-srTOJfJDsFQIfU2X) (22 лекции, 31 час)
+* [Химическая технология, Лазоряк Б.И., Хейфец Л.И., МГУ Химфак](https://teach-in.ru/course/chemical-engineering) (22 лекции, 31 час) [[youtube]](https://youtube.com/playlist?list=PLcsjsqLLSfNBsSHa-srTOJfJDsFQIfU2X)
 
 ### Цитология
 
@@ -323,13 +349,16 @@
 
 ### Эмбриология
 
+* [Эмбриология, Голиченков В.А., МГУ Биофак](https://teach-in.ru/course/embryology-golychenkov) (10 лекций, 11 часов)
+
 Книги
 
 * Биология развития, М. Барреси, С. Гилберт
 
 ### Энзимология
 
-* [Механизмы ферментативного катализа, Клячко Н.Л., Казанков Г.М., МГУ Химфак](https://youtube.com/playlist?list=PLcsjsqLLSfNCgt_jtztLMC9CIqNcffePD) (13 лекций, 15 часов 30 минут)
+* [Механизмы ферментативного катализа, Клячко Н.Л., Казанков Г.М., МГУ Химфак](https://teach-in.ru/course/mechanisms-of-enzymatic-catalysis) (13 лекций, 15 часов 30 минут) [[youtube]](https://youtube.com/playlist?list=PLcsjsqLLSfNCgt_jtztLMC9CIqNcffePD)
+* [Инженерная энзимология и аналитическая биотехнология, Курочкин И.Н., МГУ Химфак](https://teach-in.ru/course/ensimanalbio) (4 лекции, 4 часа) [[youtube]](https://www.youtube.com/playlist?list=PLcsjsqLLSfNBvR2qhdwSzzb6hlnNaJLD8)
 
 ### Язык программирования Python
 

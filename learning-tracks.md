@@ -42,6 +42,7 @@ flowchart TD
 
     class Mgen,Phgen,Chgen,Genb,Teorp cond
 
+    click Linal href "https://github.com/prozion/anti-aging-education/#линейная-алгебра" _blank
     click Chgen href "https://github.com/prozion/anti-aging-education/#общая-химия" _blank
     click Chnorg href "https://github.com/prozion/anti-aging-education/#неорганическая-химия" _blank
     click Chorg href "https://github.com/prozion/anti-aging-education/#органическая-химия" _blank
