@@ -150,7 +150,7 @@
 ### Биофизика
 
 * [Биофизика I, Рубин А.Б., МГУ Биофак](https://teach-in.ru/course/biophysics-rubin-part-1) (13 лекций, 18 часов)
-* [Биофизика I, Рубин А.Б., МГУ Биофак](https://teach-in.ru/course/biophysics-rubin-part-2) (9 лекций, 13 часов)
+* [Биофизика II, Рубин А.Б., МГУ Биофак](https://teach-in.ru/course/biophysics-rubin-part-2) (9 лекций, 13 часов)
 
 ### Вирусология
 
