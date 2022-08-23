@@ -93,7 +93,7 @@
           courses-ids (utils/$t биохимик.курсы *tabtree*)
           mermaid-nodes (->> courses-ids (map make-mermaid-node) (s/join "\n  "))
           mermaid-hrefs (->> courses-ids (map make-mermaid-href) (s/join "\n  "))
-          mermaid-arrows (make-mermaid-arrows (make-directed-graph [:Общая_химия :Высшая_математика :Общая_биология]))
+          mermaid-arrows (make-mermaid-arrows (make-directed-graph [:Общая_химия :Высшая_математика :Общая_биология :Общая_физика :Информатика]))
           conditional-courses-ids-list (->> courses-ids (map *tabtree*) (filter #(:conditional %)) (map :__id) (map name) (s/join ","))
           md (s/replace md-template "{{nodes}}" mermaid-nodes)
           md (s/replace md "{{arrows}}" mermaid-arrows)
