@@ -59,7 +59,7 @@
             acc
             (->> follow-ups (map #(format "%s -.-> %s" (name course-id) (name %))) (s/join "\n  ")))
         :else
-          (format "%s%s --> %s\n  " acc (name course-id) (name follow-ups))))
+          (format "%s%s -.-> %s\n  " acc (name course-id) (name follow-ups))))
     ""
     directed-graph))
 
