@@ -1,0 +1,56 @@
+биохимик
+	курсы
+		Общая_химия conditional:<t>
+		Общая_биология conditional:<t>
+		Высшая_математика conditional:<t>
+		Математический_анализ
+		Дифференциальные_уравнения
+		Линейная_алгебра
+		Неорганическая_химия
+		Органическая_химия
+		Молекулярная_биология
+		Биохимия
+		Биофизика
+		Бионеорганическая_химия
+		Цитология
+		Аналитическая_химия
+		Физическая_химия
+		Химическая_термодинамика
+		Теоретическая_механика
+		Статистическая_физика
+		Квантовая_химия
+		Строение_молекул
+		Высокомолекулярные_соединения
+		Химические_основы_биологических_процессов label:Химосновы_биопроцессов
+		Кристаллохимия
+		Коллоидная_химия
+		Радиохимия
+		Органический_синтез
+		Фармакология
+		Химическая_технология
+		Нанохимия_и_нанотехнологии
+		Энзимология
+		Искусственный_интеллект_в_химии
+	зависимости
+		Высшая_математика to:Математический_анализ,Линейная_алгебра
+		Математический_анализ to:Дифференциальные_уравнения
+		Общая_химия to:Неорганическая_химия
+		Неорганическая_химия to:Органическая_химия
+		Общая_биология to:Молекулярная_биология
+		Органическая_химия to:Молекулярная_биология
+	материалы
+		Аналитическая_химия_Шеховцева course:Аналитическая_химия type:video author:Шеховцева_ТН. uni:МГУ faculty:Химфак lectures:12 hours:16 url:https://teach-in.ru/course/analitchem yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfND8IuapZOfjuQtbCayF8U_R
+		Бионеорганическая_химия_Милаева course:Бионеорганическая_химия type:video author:Милаева_ЕР. uni:МГУ faculty:Химфак lectures:7 hours:9 min:30 url:https://teach-in.ru/course/bioneorganch yt:https://youtube.com/playlist?list=PLcsjsqLLSfNDOQFu5FLvE3rOF7elegEJb
+		Курс_физической_химии_Киреев course:Неорганическая_химия author:Киреев_ВА type:book publisher:Химия year:1975 recommended-by:Неорганическая_химия_I_Гудилин
+		Неорганическая_химия_I_Гудилин course:Неорганическая_химия type:video author:Гудилин_ЕА,Шевельков_АВ uni:МГУ faculty:Химфак url:https://teach-in.ru/course/neorgchem1 lectures:27 hours:36 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNC6uqQUAP3j08FZIm_frFrP
+		Неорганическая_химия_II_Шевельков course:Неорганическая_химия type:video author:Шевельков_АВ,Гудилин_ЕА uni:МГУ faculty:Химфак url:https://teach-in.ru/course/inorganic-chemistry-p2 lectures:23 hours:32 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNAf2VGoLFdqwE2pwykwZi8H
+		Неорганическая_химия_Хьюи course:Неорганическая_химия author:Хьюи_Дж type:book publisher:Химия year:1987 recommended-by:Неорганическая_химия_I_Гудилин
+		Общая_химия_Еремин course:Общая_химия type:video author:Еремин_ВВ uni:МГУ faculty:Физфак lectures:7 hours:9 min:30 url:https://teach-in.ru/course/Genchem yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNDHFikQVZd2XOqF5FK56L3D
+		Общая_и_неорганическая_химия_Ахметов course:Неорганическая_химия author:Ахметов_НС type:book publisher:Высшая_школа year:1988 recommended-by:Неорганическая_химия_I_Гудилин
+		Основы_химической_термодинамики_Еремин course:Неорганическая_химия author:Еремин_ЕН type:book publisher:Высшая_школа year:1974 recommended-by:Неорганическая_химия_I_Гудилин
+		Теоретическая_неорганическая_химия_I_Леменовский course:Неорганическая_химия type:video author:Леменовский ДА uni:МГУ faculty:Химфак url:https://teach-in.ru/course/theornotorg1 lectures:13 hours:17 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNBWv5gqr1IUey0CcCBMhKIw
+		Теоретическая_неорганическая_химия_II_Леменовский course:Неорганическая_химия type:video author:Леменовский ДА uni:МГУ faculty:Химфак url:https://teach-in.ru/course/theornotorg2 lectures:13 hours:15 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNCqp4S4Wm0197Us3XeBnRsl
+		Термодинамические_аспекты_неорганической_химии_Джонсон course:Неорганическая_химия author:Джонсон_Д type:book publisher:Мир year:1985 recommended-by:Неорганическая_химия_I_Гудилин
+		Физико-химические_основы_неорганической_химии_Полторак course:Неорганическая_химия author:Полторак_ОМ,Ковба_ЛМ type:book publisher:МГУ year:1984 recommended-by:Неорганическая_химия_I_Гудилин
+		Задачи_по_физической_химии course:Неорганическая_химия author:Еремин_ВВ,Карпов_СИ,Кузьменко_НЕ type:taskbook year:2000 url:http://chem.msu.su/rus/teaching/eremin1/welcome.html recommended-by:Неорганическая_химия_I_Гудилин
+		Webelements type:website d:"интерактивная таблица Менделеева" url:https://www.webelements.com recommended-by:Общая_химия_Еремин
