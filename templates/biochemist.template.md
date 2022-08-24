@@ -11,7 +11,11 @@
 
 ```mermaid
 flowchart LR
-  {{nodes}}
+  subgraph year1 [1 курс]
+  {{nodes-year-1}}
+  end
+
+  {{nodes-other}}
 
   {{arrows}}
 
