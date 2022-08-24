@@ -23,7 +23,7 @@
   (-> id name (s/replace "_" " ") text/titlefy))
 
 (defn get-page-link [course-id]
-  (format "%s/pages/%s.md" root-url (-> course-id name (s/replace "_" "-") s/lower-case)))
+  (format "%s/pages/%s.md" root-url (-> course-id name)))
 
 (defn get-course-name [course-id]
   (textify course-id))
@@ -171,7 +171,6 @@
                                                           (-> title (s/split #" ") butlast (#(s/join " " %)))
                                                           title)
                                               url (item :url)
-                                              _ (--- (count url) url)
                                               lectures (:lectures item)
                                               hours (:hours item)
                                               mins (:mins item)
