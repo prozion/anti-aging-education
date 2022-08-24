@@ -10,39 +10,59 @@
 Вот последовательность курсов для получения знаний необходимых биохимику. Первая диаграмма соответствует университетскому подходу, в котором студенты начинают изучение с базовых и простых предметов и с каждым семестром переходят на все более сложные и специализированные предметы и темы.
 
 ```mermaid
-flowchart TD
+flowchart LR
   subgraph year1 [1 курс]
-  Линейная_алгебра[Линейная алгебра]:::href
-  Математический_анализ[Математический анализ]:::href
   Механика[Механика]:::href
+  Математический_анализ[Математический анализ]:::href
   Неорганическая_химия[Неорганическая химия]:::href
+  Линейная_алгебра[Линейная алгебра]:::href
   Теоретическая_неорганическая_химия[Теоретическая неорганическая химия]:::href
   end
 
   subgraph year2 [2 курс]
   Теоретическая_механика[Теоретическая механика]:::href
   Теория_вероятностей[Теория вероятностей]:::href
-  Уравнения_математической_физики[Уравнения математической физики]:::href
-  Дифференциальные_уравнения[Дифференциальные уравнения]:::href
+  Реальная_структура_твердого_тела[Реальная структура твердого тела]:::href
+  Кристаллохимия[Кристаллохимия]:::href
   Теория_поля[Теория поля]:::href
-  Оптика[Оптика]:::href
   Аналитическая_химия[Аналитическая химия]:::href
   Физическая_химия[Физическая химия]:::href
+  Математическая_статистика[Математическая статистика]:::href
+  Оптика[Оптика]:::href
+  Уравнения_математической_физики[Уравнения математической физики]:::href
+  Дифференциальные_уравнения[Дифференциальные уравнения]:::href
+  Аналитическая_биохимия[Аналитическая биохимия]:::href
   end
 
-  
+  subgraph year3 [3 курс]
+  Физиология[Физиология]:::href
+  Квантовая_механика[Квантовая механика]:::href
+  Иммунология[Иммунология]:::href
+  Строение_молекул[Строение молекул]:::href
+  end
 
-  Линейная_алгебра -.-> Теория_вероятностей
+  Строение_вещества[Строение вещества]:::href
+
+  Теоретическая_механика -.-> Теория_поля
+  Теоретическая_механика -.-> Физическая_химия
+  Теоретическая_механика -.-> Квантовая_механика
+  Физиология -.-> Иммунология
+  Строение_вещества -.-> Строение_молекул
+  Теория_вероятностей -.-> Математическая_статистика
+  Механика -.-> Оптика
+  Механика -.-> Теоретическая_механика
+  Реальная_структура_твердого_тела -.-> Строение_вещества
+  Кристаллохимия -.-> Реальная_структура_твердого_тела
   Математический_анализ -.-> Уравнения_математической_физики
   Математический_анализ -.-> Дифференциальные_уравнения
   Математический_анализ -.-> Теория_поля
-  Механика -.-> Оптика
-  Механика -.-> Теоретическая_механика
   Неорганическая_химия -.-> Теоретическая_неорганическая_химия
   Неорганическая_химия -.-> Аналитическая_химия
   Неорганическая_химия -.-> Физическая_химия
-  Теоретическая_механика -.-> Теория_поля
-  Теоретическая_механика -.-> Физическая_химия
+  Неорганическая_химия -.-> Кристаллохимия
+  Теория_поля -.-> Квантовая_механика
+  Аналитическая_химия -.-> Аналитическая_биохимия
+  Линейная_алгебра -.-> Теория_вероятностей
   
 
   classDef cond stroke-dasharray:3,opacity:0.8
@@ -51,6 +71,7 @@ flowchart TD
   class Высшая_математика,Информатика,Общая_биология,Общая_физика,Общая_химия cond
 
   click Аналитическая_химия href "https://github.com/prozion/anti-aging-education/pages/аналитическая-химия.md" _blank
+  click Аналитическая_биохимия href "https://github.com/prozion/anti-aging-education/pages/аналитическая-биохимия.md" _blank
   click Аналитическая_геометрия href "https://github.com/prozion/anti-aging-education/pages/аналитическая-геометрия.md" _blank
   click Бионеорганическая_химия href "https://github.com/prozion/anti-aging-education/pages/бионеорганическая-химия.md" _blank
   click Биофизика href "https://github.com/prozion/anti-aging-education/pages/биофизика.md" _blank
@@ -58,6 +79,7 @@ flowchart TD
   click Высокомолекулярные_соединения href "https://github.com/prozion/anti-aging-education/pages/высокомолекулярные-соединения.md" _blank
   click Высшая_математика href "https://github.com/prozion/anti-aging-education/pages/высшая-математика.md" _blank
   click Дифференциальные_уравнения href "https://github.com/prozion/anti-aging-education/pages/дифференциальные-уравнения.md" _blank
+  click Иммунология href "https://github.com/prozion/anti-aging-education/pages/иммунология.md" _blank
   click Информатика href "https://github.com/prozion/anti-aging-education/pages/информатика.md" _blank
   click Искусственный_интеллект_в_химии href "https://github.com/prozion/anti-aging-education/pages/искусственный-интеллект-в-химии.md" _blank
   click Кариология href "https://github.com/prozion/anti-aging-education/pages/кариология.md" _blank
@@ -67,6 +89,8 @@ flowchart TD
   click Коллоидная_химия href "https://github.com/prozion/anti-aging-education/pages/коллоидная-химия.md" _blank
   click Компьютерный_инструментарий href "https://github.com/prozion/anti-aging-education/pages/компьютерный-инструментарий.md" _blank
   click Линейная_алгебра href "https://github.com/prozion/anti-aging-education/pages/линейная-алгебра.md" _blank
+  click Математическая_статистика href "https://github.com/prozion/anti-aging-education/pages/математическая-статистика.md" _blank
+  click Математические_методы_химии href "https://github.com/prozion/anti-aging-education/pages/математические-методы-химии.md" _blank
   click Математический_анализ href "https://github.com/prozion/anti-aging-education/pages/математический-анализ.md" _blank
   click Механика href "https://github.com/prozion/anti-aging-education/pages/механика.md" _blank
   click Молекулярная_биология href "https://github.com/prozion/anti-aging-education/pages/молекулярная-биология.md" _blank
@@ -80,8 +104,10 @@ flowchart TD
   click Органическая_химия href "https://github.com/prozion/anti-aging-education/pages/органическая-химия.md" _blank
   click Органический_синтез href "https://github.com/prozion/anti-aging-education/pages/органический-синтез.md" _blank
   click Основы_радиохимии href "https://github.com/prozion/anti-aging-education/pages/основы-радиохимии.md" _blank
+  click Реальная_структура_твердого_тела href "https://github.com/prozion/anti-aging-education/pages/реальная-структура-твердого-тела.md" _blank
   click Радиохимия href "https://github.com/prozion/anti-aging-education/pages/радиохимия.md" _blank
   click Статистическая_физика href "https://github.com/prozion/anti-aging-education/pages/статистическая-физика.md" _blank
+  click Cтроение_вещества href "https://github.com/prozion/anti-aging-education/pages/cтроение-вещества.md" _blank
   click Строение_молекул href "https://github.com/prozion/anti-aging-education/pages/строение-молекул.md" _blank
   click Теоретическая_механика href "https://github.com/prozion/anti-aging-education/pages/теоретическая-механика.md" _blank
   click Теоретическая_неорганическая_химия href "https://github.com/prozion/anti-aging-education/pages/теоретическая-неорганическая-химия.md" _blank
@@ -89,7 +115,9 @@ flowchart TD
   click Теория_поля href "https://github.com/prozion/anti-aging-education/pages/теория-поля.md" _blank
   click Уравнения_математической_физики href "https://github.com/prozion/anti-aging-education/pages/уравнения-математической-физики.md" _blank
   click Фармакология href "https://github.com/prozion/anti-aging-education/pages/фармакология.md" _blank
+  click Физиология href "https://github.com/prozion/anti-aging-education/pages/физиология.md" _blank
   click Физическая_химия href "https://github.com/prozion/anti-aging-education/pages/физическая-химия.md" _blank
+  click Функциональные_материалы href "https://github.com/prozion/anti-aging-education/pages/функциональные-материалы.md" _blank
   click Химические_основы_биологических_процессов href "https://github.com/prozion/anti-aging-education/pages/химические-основы-биологических-процессов.md" _blank
   click Химическая_биология href "https://github.com/prozion/anti-aging-education/pages/химическая-биология.md" _blank
   click Химическая_термодинамика href "https://github.com/prozion/anti-aging-education/pages/химическая-термодинамика.md" _blank

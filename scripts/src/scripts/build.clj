@@ -107,17 +107,20 @@
                             :Неорганическая_химия
                             :Основы_радиохимии
                             :Химическая_биология
+                            :Физиология
                             ]
                             *tabtree*)
           nodes-ids (get-nodes-from-directed-graph directed-graph)
           filter-nodes-by-year (fn [year] (filter (fn [node-id] (= (:year (*tabtree* node-id)) year)) nodes-ids))
           nodes-ids-1 (filter-nodes-by-year 1)
           nodes-ids-2 (filter-nodes-by-year 2)
-          nodes-ids-other (minus nodes-ids nodes-ids-1 nodes-ids-2)
+          nodes-ids-3 (filter-nodes-by-year 3)
+          nodes-ids-other (minus nodes-ids nodes-ids-1 nodes-ids-2 nodes-ids-3)
 
           make-mermaid-nodes-block (fn [nodes-ids] (->> nodes-ids (map make-mermaid-node) (s/join "\n  ")))
           mermaid-nodes-1 (make-mermaid-nodes-block nodes-ids-1)
           mermaid-nodes-2 (make-mermaid-nodes-block nodes-ids-2)
+          mermaid-nodes-3 (make-mermaid-nodes-block nodes-ids-3)
           mermaid-nodes-other (make-mermaid-nodes-block nodes-ids-other)
 
           mermaid-arrows (make-mermaid-arrows directed-graph)
@@ -126,6 +129,7 @@
 
           md (s/replace md-template "{{nodes-year-1}}" mermaid-nodes-1)
           md (s/replace md "{{nodes-year-2}}" mermaid-nodes-2)
+          md (s/replace md "{{nodes-year-3}}" mermaid-nodes-3)
           md (s/replace md "{{nodes-other}}" mermaid-nodes-other)
           md (s/replace md "{{arrows}}" mermaid-arrows)
           md (s/replace md "{{conditional courses}}" conditional-courses-ids-list)
