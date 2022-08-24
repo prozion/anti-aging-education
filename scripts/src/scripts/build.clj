@@ -87,13 +87,23 @@
                 (merge directed-graph {start-node-id follow-ups})
                 directed-graph))))))
 
+(defn get-items-by-condition [tabtree condition]
+  (let [result (filter condition (vals tabtree))]
+    (if (empty? result) nil result)))
+
 (defn get-nodes-from-directed-graph [directed-graph]
   (-> (concat (keys directed-graph) (vals directed-graph)) flatten distinct))
 
-(defn make-md [tabtree-file biochemistry-follows-tabtree-file md-file md-template]
+(def tabtree-file "../knowledge/biochemist.tree")
+(def root-template-file "../templates/biochemist.template.md")
+; (def page-template-file "../templates/page.template.md")
+(def biochemistry-centered-follow-ups-file "../knowledge/biochemistry-follows.tree")
+(def root-file "../biochemist.md")
+
+(defn make-md []
   (binding [*tabtree* (tabtree/parse-tab-tree tabtree-file)]
     (let [
-          md-template (slurp md-template)
+          root-template (slurp root-template-file)
           courses-ids (utils/$t биохимик.курсы *tabtree*)
           mermaid-hrefs (->> courses-ids (map make-mermaid-href) (s/join "\n  "))
           directed-graph (make-directed-graph
@@ -127,7 +137,7 @@
 
           conditional-courses-ids-list (->> courses-ids (map *tabtree*) (filter #(:conditional %)) (map :__id) (map name) (s/join ","))
 
-          md (s/replace md-template "{{nodes-year-1}}" mermaid-nodes-1)
+          md (s/replace root-template "{{nodes-year-1}}" mermaid-nodes-1)
           md (s/replace md "{{nodes-year-2}}" mermaid-nodes-2)
           md (s/replace md "{{nodes-year-3}}" mermaid-nodes-3)
           md (s/replace md "{{nodes-other}}" mermaid-nodes-other)
@@ -135,7 +145,7 @@
           md (s/replace md "{{conditional courses}}" conditional-courses-ids-list)
           md (s/replace md "{{hrefs}}" mermaid-hrefs)
 
-          biochemistry-links-tabtree (tabtree/parse-tab-tree biochemistry-follows-tabtree-file)
+          biochemistry-links-tabtree (tabtree/parse-tab-tree biochemistry-centered-follow-ups-file)
           biochemistry-directed-graph (make-directed-graph [:Эпигенетика :Молекулярная_генетика] biochemistry-links-tabtree)
           mermaid-biochemistry-nodes-ids (get-nodes-from-directed-graph biochemistry-directed-graph)
           mermaid-biochemistry-nodes (->> mermaid-biochemistry-nodes-ids (map make-mermaid-node) (s/join "\n  "))
@@ -145,14 +155,63 @@
           md (s/replace md "{{biochemistry-nodes}}" mermaid-biochemistry-nodes)
           md (s/replace md "{{biochemistry-arrows}}" mermaid-biochemistry-arrows)
           md (s/replace md "{{biochemistry-hrefs}}" mermaid-biochemistry-hrefs)
+
+          _ (doall (for [course-id courses-ids]
+              (let [course-file (format "../pages/%s" (name course-id))
+                    ; _ (--- 111)
+                    video-lectures (get-items-by-condition *tabtree* (fn [item] (and (= (:type item) :video) (= (:course item) course-id))))
+                    textbooks (get-items-by-condition *tabtree* (fn [item] (and (= (:type item) :textbook) (= (:course item) course-id))))
+                    books (get-items-by-condition *tabtree* (fn [item] (and (= (:type item) :book) (= (:course item) course-id))))
+                    websites (get-items-by-condition *tabtree* (fn [item] (and (= (:type item) :website) (= (:course item) course-id))))
+                    process-author (fn [author] (-> author name (s/replace #"_" " ") (s/replace #"([A-ZА-Я])([A-ZА-Я])" "$1.$2")))
+                    make-md-list-item (fn [item]
+                                        (let [title (textify (:__id item))
+                                              type (:type item)
+                                              title (if (index-of? [:book :textbook :video] type)
+                                                          (-> title (s/split #" ") butlast (#(s/join " " %)))
+                                                          title)
+                                              url (item :url)
+                                              _ (--- (count url) url)
+                                              lectures (:lectures item)
+                                              hours (:hours item)
+                                              mins (:mins item)
+                                              author (:author item)
+                                              author (if (coll? author)
+                                                          (->> author (map process-author) (s/join ", "))
+                                                          (process-author author))
+                                              full-title (format "%s%s"
+                                                                  title
+                                                                  (if author (format ", %s" author) ""))
+                                              additional-info (cond
+                                                                (index-of? [:video] type)
+                                                                  (format " (%s%s%s)"
+                                                                    (if lectures (format "%s лекций" lectures) "")
+                                                                    (if hours (format ", %s часов" hours) "")
+                                                                    (if mins (format ", %s минут" mins) ""))
+                                                                :else
+                                                                  "")
+
+                                              ]
+                                          (format "* %s%s"
+                                                  (if url
+                                                    (format "[%s](%s)" full-title url)
+                                                    full-title)
+                                                  additional-info)))
+                    video-lectures-list (and video-lectures (->> video-lectures (map make-md-list-item) (s/join "\n")))
+                    textbooks-list (and textbooks (->> textbooks (map make-md-list-item) (s/join "\n")))
+                    books-list (and books (->> books (map make-md-list-item) (s/join "\n")))
+                    websites-list (and websites (->> websites (map make-md-list-item) (s/join "\n")))
+                    course-page (format "# %s\n\n%s%s%s%s"
+                                        (get-course-name course-id)
+                                        (if video-lectures (format "## Видеолекции\n\n%s\n\n" video-lectures-list) "")
+                                        (if textbooks (format "## Учебники\n\n%s\n\n" textbooks-list) "")
+                                        (if books (format "## Книги\n\n%s\n\n" books-list) "")
+                                        (if websites (format "## Сайты\n\n%s\n\n" websites-list) ""))
+                    ]
+                (spit course-file course-page))))
           ]
-      (spit md-file md))))
+      (spit root-file md))))
 
 (defn run []
   (text/titlefy "foo")
-  (make-md
-    "../knowledge/biochemist.tree"
-    "../knowledge/biochemistry-follows.tree"
-    "../biochemist.md"
-    "../templates/biochemist.template.md"
-    ))
+  (make-md))
