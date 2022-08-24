@@ -96,16 +96,36 @@
           md-template (slurp md-template)
           courses-ids (utils/$t биохимик.курсы *tabtree*)
           mermaid-hrefs (->> courses-ids (map make-mermaid-href) (s/join "\n  "))
-          directed-graph (make-directed-graph [:Общая_химия :Высшая_математика :Общая_биология :Общая_физика :Информатика] *tabtree*)
+          directed-graph (make-directed-graph
+                            [
+                            :Аналитическая_химия
+                            :Аналитическая_геометрия
+                            :Информатика
+                            :Линейная_алгебра
+                            :Математический_анализ
+                            :Механика
+                            :Неорганическая_химия
+                            :Основы_радиохимии
+                            :Химическая_биология
+                            ]
+                            *tabtree*)
           nodes-ids (get-nodes-from-directed-graph directed-graph)
-          nodes-ids-1 (filter (fn [node-id] (= (:year (*tabtree* node-id)) 1)) nodes-ids)
-          _ (--- nodes-ids-1)
-          nodes-ids-other (minus nodes-ids nodes-ids-1)
-          mermaid-nodes-1 (->> nodes-ids-1 (map make-mermaid-node) (s/join "\n  "))
-          mermaid-nodes-other (->> nodes-ids-other (map make-mermaid-node) (s/join "\n  "))
+          filter-nodes-by-year (fn [year] (filter (fn [node-id] (= (:year (*tabtree* node-id)) year)) nodes-ids))
+          nodes-ids-1 (filter-nodes-by-year 1)
+          nodes-ids-2 (filter-nodes-by-year 2)
+          nodes-ids-other (minus nodes-ids nodes-ids-1 nodes-ids-2)
+
+          make-mermaid-nodes-block (fn [nodes-ids] (->> nodes-ids (map make-mermaid-node) (s/join "\n  ")))
+          mermaid-nodes-1 (make-mermaid-nodes-block nodes-ids-1)
+          mermaid-nodes-2 (make-mermaid-nodes-block nodes-ids-2)
+          mermaid-nodes-other (make-mermaid-nodes-block nodes-ids-other)
+
           mermaid-arrows (make-mermaid-arrows directed-graph)
+
           conditional-courses-ids-list (->> courses-ids (map *tabtree*) (filter #(:conditional %)) (map :__id) (map name) (s/join ","))
+
           md (s/replace md-template "{{nodes-year-1}}" mermaid-nodes-1)
+          md (s/replace md "{{nodes-year-2}}" mermaid-nodes-2)
           md (s/replace md "{{nodes-other}}" mermaid-nodes-other)
           md (s/replace md "{{arrows}}" mermaid-arrows)
           md (s/replace md "{{conditional courses}}" conditional-courses-ids-list)

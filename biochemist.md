@@ -12,87 +12,25 @@
 ```mermaid
 flowchart LR
   subgraph year1 [1 курс]
+  Линейная_алгебра[Линейная алгебра]:::href
+  Математический_анализ[Математический анализ]:::href
+  Механика[Механика]:::href
   Неорганическая_химия[Неорганическая химия]:::href
+  Теоретическая_неорганическая_химия[Теоретическая неорганическая химия]:::href
   end
 
-  Общая_биология[Общая биология]:::href
-  Химическая_термодинамика[Химическая термодинамика]:::href
-  Эпигенетика[Эпигенетика]:::href
-  Линейная_алгебра[Линейная алгебра]:::href
-  Искусственный_интеллект_в_химии[Искусственный интеллект в химии]:::href
-  Высшая_математика[Высшая математика]:::href
-  Органический_синтез[Органический синтез]:::href
-  Фармакология[Фармакология]:::href
-  Физическая_химия[Физическая химия]:::href
-  Аналитическая_химия[Аналитическая химия]:::href
-  Бионеорганическая_химия[Бионеорганическая химия]:::href
-  Дифференциальные_уравнения[Дифференциальные уравнения]:::href
-  Статистическая_физика[Статистическая физика]:::href
-  Высокомолекулярные_соединения[Высокомолекулярные соединения]:::href
-  Химическая_технология[Химическая технология]:::href
-  Биохимия[Биохимия]:::href
-  Математический_анализ[Математический анализ]:::href
-  Информатика[Информатика]:::href
-  Квантовая_химия[Квантовая химия]:::href
-  Общая_физика[Общая физика]:::href
-  Цитология[Цитология]:::href
-  Радиохимия[Радиохимия]:::href
-  Кристаллохимия[Кристаллохимия]:::href
-  Молекулярная_биология[Молекулярная биология]:::href
-  Коллоидная_химия[Коллоидная химия]:::href
-  Нанохимия_и_нанотехнологии[Нанохимия и нанотехнологии]:::href
-  Биофизика[Биофизика]:::href
-  Энзимология[Энзимология]:::href
-  Молекулярная_генетика[Молекулярная генетика]:::href
-  Генетика[Генетика]:::href
-  Органическая_химия[Органическая химия]:::href
-  Строение_молекул[Строение молекул]:::href
-  Химические_основы_биологических_процессов[Химосновы биопроцессов]:::href
-  Теоретическая_механика[Теоретическая механика]:::href
-  Квантовая_механика[Квантовая механика]:::href
-  Общая_химия[Общая химия]:::href
+  subgraph year2 [2 курс]
+  Теория_вероятностей[Теория вероятностей]:::href
+  Уравнения_математической_физики[Уравнения математической физики]:::href
+  Оптика[Оптика]:::href
+  end
 
-  Общая_химия -.-> Неорганическая_химия
-  Общая_химия -.-> Искусственный_интеллект_в_химии
-  Квантовая_механика -.-> Квантовая_химия
-  Теоретическая_механика -.-> Квантовая_механика
-  Органическая_химия -.-> Биохимия
-  Органическая_химия -.-> Органический_синтез
-  Органическая_химия -.-> Химическая_технология
-  Органическая_химия -.-> Высокомолекулярные_соединения
-  Генетика -.-> Молекулярная_генетика
-  Молекулярная_генетика -.-> Эпигенетика
-  Молекулярная_биология -.-> Молекулярная_генетика
-  Общая_физика -.-> Физическая_химия
-  Общая_физика -.-> Радиохимия
-  Общая_физика -.-> Теоретическая_механика
-  Общая_физика -.-> Статистическая_физика
-  Общая_физика -.-> Химическая_термодинамика
-  Квантовая_химия -.-> Нанохимия_и_нанотехнологии
-  Квантовая_химия -.-> Строение_молекул
-  Информатика -.-> Искусственный_интеллект_в_химии
-  Математический_анализ -.-> Дифференциальные_уравнения
-  Математический_анализ -.-> Статистическая_физика
-  Биохимия -.-> Молекулярная_биология
-  Биохимия -.-> Бионеорганическая_химия
-  Биохимия -.-> Фармакология
-  Биохимия -.-> Энзимология
-  Биохимия -.-> Химические_основы_биологических_процессов
-  Неорганическая_химия -.-> Органическая_химия
-  Неорганическая_химия -.-> Кристаллохимия
-  Неорганическая_химия -.-> Коллоидная_химия
-  Неорганическая_химия -.-> Радиохимия
-  Неорганическая_химия -.-> Химическая_термодинамика
-  Неорганическая_химия -.-> Физическая_химия
-  Неорганическая_химия -.-> Аналитическая_химия
-  Дифференциальные_уравнения -.-> Теоретическая_механика
-  Физическая_химия -.-> Биофизика
-  Высшая_математика -.-> Математический_анализ
-  Высшая_математика -.-> Линейная_алгебра
-  Линейная_алгебра -.-> Теоретическая_механика
-  Общая_биология -.-> Биохимия
-  Общая_биология -.-> Цитология
-  Общая_биология -.-> Генетика
+  
+
+  Линейная_алгебра -.-> Теория_вероятностей
+  Математический_анализ -.-> Уравнения_математической_физики
+  Механика -.-> Оптика
+  Неорганическая_химия -.-> Теоретическая_неорганическая_химия
   
 
   classDef cond stroke-dasharray:3,opacity:0.8
@@ -101,6 +39,7 @@ flowchart LR
   class Высшая_математика,Информатика,Общая_биология,Общая_физика,Общая_химия cond
 
   click Аналитическая_химия href "https://github.com/prozion/anti-aging-education/pages/аналитическая-химия.md" _blank
+  click Аналитическая_геометрия href "https://github.com/prozion/anti-aging-education/pages/аналитическая-геометрия.md" _blank
   click Бионеорганическая_химия href "https://github.com/prozion/anti-aging-education/pages/бионеорганическая-химия.md" _blank
   click Биофизика href "https://github.com/prozion/anti-aging-education/pages/биофизика.md" _blank
   click Биохимия href "https://github.com/prozion/anti-aging-education/pages/биохимия.md" _blank
@@ -114,8 +53,10 @@ flowchart LR
   click Квантовая_химия href "https://github.com/prozion/anti-aging-education/pages/квантовая-химия.md" _blank
   click Кристаллохимия href "https://github.com/prozion/anti-aging-education/pages/кристаллохимия.md" _blank
   click Коллоидная_химия href "https://github.com/prozion/anti-aging-education/pages/коллоидная-химия.md" _blank
+  click Компьютерный_инструментарий href "https://github.com/prozion/anti-aging-education/pages/компьютерный-инструментарий.md" _blank
   click Линейная_алгебра href "https://github.com/prozion/anti-aging-education/pages/линейная-алгебра.md" _blank
   click Математический_анализ href "https://github.com/prozion/anti-aging-education/pages/математический-анализ.md" _blank
+  click Механика href "https://github.com/prozion/anti-aging-education/pages/механика.md" _blank
   click Молекулярная_биология href "https://github.com/prozion/anti-aging-education/pages/молекулярная-биология.md" _blank
   click Молекулярная_генетика href "https://github.com/prozion/anti-aging-education/pages/молекулярная-генетика.md" _blank
   click Нанохимия_и_нанотехнологии href "https://github.com/prozion/anti-aging-education/pages/нанохимия-и-нанотехнологии.md" _blank
@@ -123,15 +64,21 @@ flowchart LR
   click Общая_биология href "https://github.com/prozion/anti-aging-education/pages/общая-биология.md" _blank
   click Общая_физика href "https://github.com/prozion/anti-aging-education/pages/общая-физика.md" _blank
   click Общая_химия href "https://github.com/prozion/anti-aging-education/pages/общая-химия.md" _blank
+  click Оптика href "https://github.com/prozion/anti-aging-education/pages/оптика.md" _blank
   click Органическая_химия href "https://github.com/prozion/anti-aging-education/pages/органическая-химия.md" _blank
   click Органический_синтез href "https://github.com/prozion/anti-aging-education/pages/органический-синтез.md" _blank
+  click Основы_радиохимии href "https://github.com/prozion/anti-aging-education/pages/основы-радиохимии.md" _blank
   click Радиохимия href "https://github.com/prozion/anti-aging-education/pages/радиохимия.md" _blank
   click Статистическая_физика href "https://github.com/prozion/anti-aging-education/pages/статистическая-физика.md" _blank
   click Строение_молекул href "https://github.com/prozion/anti-aging-education/pages/строение-молекул.md" _blank
   click Теоретическая_механика href "https://github.com/prozion/anti-aging-education/pages/теоретическая-механика.md" _blank
+  click Теоретическая_неорганическая_химия href "https://github.com/prozion/anti-aging-education/pages/теоретическая-неорганическая-химия.md" _blank
+  click Теория_вероятностей href "https://github.com/prozion/anti-aging-education/pages/теория-вероятностей.md" _blank
+  click Уравнения_математической_физики href "https://github.com/prozion/anti-aging-education/pages/уравнения-математической-физики.md" _blank
   click Фармакология href "https://github.com/prozion/anti-aging-education/pages/фармакология.md" _blank
   click Физическая_химия href "https://github.com/prozion/anti-aging-education/pages/физическая-химия.md" _blank
   click Химические_основы_биологических_процессов href "https://github.com/prozion/anti-aging-education/pages/химические-основы-биологических-процессов.md" _blank
+  click Химическая_биология href "https://github.com/prozion/anti-aging-education/pages/химическая-биология.md" _blank
   click Химическая_термодинамика href "https://github.com/prozion/anti-aging-education/pages/химическая-термодинамика.md" _blank
   click Химическая_технология href "https://github.com/prozion/anti-aging-education/pages/химическая-технология.md" _blank
   click Цитология href "https://github.com/prozion/anti-aging-education/pages/цитология.md" _blank

@@ -15,6 +15,10 @@ flowchart LR
   {{nodes-year-1}}
   end
 
+  subgraph year2 [2 курс]
+  {{nodes-year-2}}
+  end
+
   {{nodes-other}}
 
   {{arrows}}
