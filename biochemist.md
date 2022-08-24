@@ -36,12 +36,13 @@ flowchart LR
 
   subgraph year3 [3 курс]
   Физиология[Физиология]:::href
+  Строение_вещества[Строение вещества]:::href
   Квантовая_механика[Квантовая механика]:::href
   Иммунология[Иммунология]:::href
   Строение_молекул[Строение молекул]:::href
   end
 
-  Строение_вещества[Строение вещества]:::href
+  
 
   Теоретическая_механика -.-> Теория_поля
   Теоретическая_механика -.-> Физическая_химия
@@ -107,7 +108,7 @@ flowchart LR
   click Реальная_структура_твердого_тела href "https://github.com/prozion/anti-aging-education/pages/реальная-структура-твердого-тела.md" _blank
   click Радиохимия href "https://github.com/prozion/anti-aging-education/pages/радиохимия.md" _blank
   click Статистическая_физика href "https://github.com/prozion/anti-aging-education/pages/статистическая-физика.md" _blank
-  click Cтроение_вещества href "https://github.com/prozion/anti-aging-education/pages/cтроение-вещества.md" _blank
+  click Строение_вещества href "https://github.com/prozion/anti-aging-education/pages/строение-вещества.md" _blank
   click Строение_молекул href "https://github.com/prozion/anti-aging-education/pages/строение-молекул.md" _blank
   click Теоретическая_механика href "https://github.com/prozion/anti-aging-education/pages/теоретическая-механика.md" _blank
   click Теоретическая_неорганическая_химия href "https://github.com/prozion/anti-aging-education/pages/теоретическая-неорганическая-химия.md" _blank
