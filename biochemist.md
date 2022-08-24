@@ -142,14 +142,17 @@ flowchart TD
   Молекулярная_биология[Молекулярная биология]:::href
   Строение_молекул[Строение молекул]:::href
   Квантовая_химия[Квантовая химия]:::href
-  Кариология[Кариология]:::href
   Органическая_химия[Органическая химия]:::href
+  Кариология[Кариология]:::href
   Цитология[Цитология]:::href
   Неорганическая_химия[Неорганическая химия]:::href
 
   Эпигенетика -.-> Биохимия
+  Эпигенетика -.-> Молекулярная_биология
   Эпигенетика -.-> Кариология
   Молекулярная_генетика -.-> Биохимия
+  Молекулярная_генетика -.-> Молекулярная_биология
+  Молекулярная_генетика -.-> Кариология
   Биохимия -.-> Молекулярная_биология
   Биохимия -.-> Строение_молекул
   Биохимия -.-> Квантовая_химия
@@ -158,6 +161,8 @@ flowchart TD
   Молекулярная_биология -.-> Кариология
   Строение_молекул -.-> Квантовая_химия
   Квантовая_химия -.-> Неорганическая_химия
+  Органическая_химия -.-> Квантовая_химия
+  Органическая_химия -.-> Неорганическая_химия
   
 
   classDef href color:#0969D7
@@ -168,8 +173,8 @@ flowchart TD
   click Молекулярная_биология href "https://github.com/prozion/anti-aging-education/pages/молекулярная-биология.md" _blank
   click Строение_молекул href "https://github.com/prozion/anti-aging-education/pages/строение-молекул.md" _blank
   click Квантовая_химия href "https://github.com/prozion/anti-aging-education/pages/квантовая-химия.md" _blank
-  click Кариология href "https://github.com/prozion/anti-aging-education/pages/кариология.md" _blank
   click Органическая_химия href "https://github.com/prozion/anti-aging-education/pages/органическая-химия.md" _blank
+  click Кариология href "https://github.com/prozion/anti-aging-education/pages/кариология.md" _blank
   click Цитология href "https://github.com/prozion/anti-aging-education/pages/цитология.md" _blank
   click Неорганическая_химия href "https://github.com/prozion/anti-aging-education/pages/неорганическая-химия.md" _blank
 ```
