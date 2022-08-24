@@ -64,14 +64,14 @@
     directed-graph))
 
 (defn make-directed-graph
-  ([start-nodes]
-    (make-directed-graph start-nodes {}))
-  ([start-nodes directed-graph]
+  ([start-nodes tabtree]
+    (make-directed-graph start-nodes tabtree {}))
+  ([start-nodes tabtree directed-graph]
     (cond
       (empty? start-nodes) directed-graph
       :else
         (let [start-node-id (first start-nodes)
-              start-node-item (*tabtree* start-node-id)
+              start-node-item (tabtree start-node-id)
               follow-ups (:to start-node-item)
               extended-start-nodes (rest start-nodes)
               extended-start-nodes
@@ -82,23 +82,39 @@
               extended-start-nodes (distinct extended-start-nodes)]
             (make-directed-graph
               extended-start-nodes
+              tabtree
               (if follow-ups
                 (merge directed-graph {start-node-id follow-ups})
                 directed-graph))))))
 
-(defn make-md [tabtree-file md-file md-template]
+(defn get-nodes-from-directed-graph [directed-graph]
+  (-> (concat (keys directed-graph) (vals directed-graph)) flatten distinct))
+
+(defn make-md [tabtree-file biochemistry-follows-tabtree-file md-file md-template]
   (binding [*tabtree* (tabtree/parse-tab-tree tabtree-file)]
     (let [
           md-template (slurp md-template)
           courses-ids (utils/$t биохимик.курсы *tabtree*)
           mermaid-nodes (->> courses-ids (map make-mermaid-node) (s/join "\n  "))
           mermaid-hrefs (->> courses-ids (map make-mermaid-href) (s/join "\n  "))
-          mermaid-arrows (make-mermaid-arrows (make-directed-graph [:Общая_химия :Высшая_математика :Общая_биология :Общая_физика :Информатика]))
+          mermaid-arrows (make-mermaid-arrows (make-directed-graph [:Общая_химия :Высшая_математика :Общая_биология :Общая_физика :Информатика] *tabtree*))
           conditional-courses-ids-list (->> courses-ids (map *tabtree*) (filter #(:conditional %)) (map :__id) (map name) (s/join ","))
           md (s/replace md-template "{{nodes}}" mermaid-nodes)
           md (s/replace md "{{arrows}}" mermaid-arrows)
           md (s/replace md "{{conditional courses}}" conditional-courses-ids-list)
-          md (s/replace md "{{links}}" mermaid-hrefs)
+          md (s/replace md "{{hrefs}}" mermaid-hrefs)
+
+          biochemistry-links-tabtree (tabtree/parse-tab-tree biochemistry-follows-tabtree-file)
+          biochemistry-directed-graph (make-directed-graph [:Эпигенетика :Молекулярная_генетика] biochemistry-links-tabtree)
+          mermaid-biochemistry-nodes-ids (get-nodes-from-directed-graph biochemistry-directed-graph)
+          _ (--- mermaid-biochemistry-nodes-ids)
+          mermaid-biochemistry-nodes (->> mermaid-biochemistry-nodes-ids (map make-mermaid-node) (s/join "\n  "))
+          mermaid-biochemistry-arrows (make-mermaid-arrows biochemistry-directed-graph)
+          mermaid-biochemistry-hrefs (->> mermaid-biochemistry-nodes-ids (map make-mermaid-href) (s/join "\n  "))
+
+          md (s/replace md "{{biochemistry-nodes}}" mermaid-biochemistry-nodes)
+          md (s/replace md "{{biochemistry-arrows}}" mermaid-biochemistry-arrows)
+          md (s/replace md "{{biochemistry-hrefs}}" mermaid-biochemistry-hrefs)
           ]
       (spit md-file md))))
 
@@ -106,6 +122,7 @@
   (text/titlefy "foo")
   (make-md
     "../knowledge/biochemist.tree"
+    "../knowledge/biochemistry-follows.tree"
     "../biochemist.md"
-    "../templates/biochemist.template"
+    "../templates/biochemist.template.md"
     ))
