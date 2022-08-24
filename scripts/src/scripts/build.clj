@@ -17,7 +17,7 @@
 
 (def ^:dynamic *tabtree* {})
 
-(def root-url "https://github.com/prozion/anti-aging-education")
+(def root-url "https://github.com/prozion/anti-aging-education/blob/main")
 
 (defn textify [id]
   (-> id name (s/replace "_" " ") text/titlefy))
@@ -157,7 +157,7 @@
           md (s/replace md "{{biochemistry-hrefs}}" mermaid-biochemistry-hrefs)
 
           _ (doall (for [course-id courses-ids]
-              (let [course-file (format "../pages/%s" (name course-id))
+              (let [course-file (format "../pages/%s.md" (name course-id))
                     ; _ (--- 111)
                     video-lectures (get-items-by-condition *tabtree* (fn [item] (and (= (:type item) :video) (= (:course item) course-id))))
                     textbooks (get-items-by-condition *tabtree* (fn [item] (and (= (:type item) :textbook) (= (:course item) course-id))))
