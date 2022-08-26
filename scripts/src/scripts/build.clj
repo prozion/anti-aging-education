@@ -125,17 +125,19 @@
           get-year (fn [node-id] (let [year (:year (*tabtree* node-id))]
                                     (cond
                                       (coll? year) (first year)
-                                      :else year))
+                                      :else year)))
           filter-nodes-by-year (fn [year] (filter (fn [node-id] (= (get-year node-id) year)) nodes-ids))
           nodes-ids-1 (filter-nodes-by-year 1)
           nodes-ids-2 (filter-nodes-by-year 2)
           nodes-ids-3 (filter-nodes-by-year 3)
-          nodes-ids-other (minus nodes-ids nodes-ids-1 nodes-ids-2 nodes-ids-3)
+          nodes-ids-4 (filter-nodes-by-year 4)
+          nodes-ids-other (minus nodes-ids nodes-ids-1 nodes-ids-2 nodes-ids-3 nodes-ids-4)
 
           make-mermaid-nodes-block (fn [nodes-ids] (->> nodes-ids (map make-mermaid-node) (s/join "\n  ")))
           mermaid-nodes-1 (make-mermaid-nodes-block nodes-ids-1)
           mermaid-nodes-2 (make-mermaid-nodes-block nodes-ids-2)
           mermaid-nodes-3 (make-mermaid-nodes-block nodes-ids-3)
+          mermaid-nodes-4 (make-mermaid-nodes-block nodes-ids-4)
           mermaid-nodes-other (make-mermaid-nodes-block nodes-ids-other)
 
           mermaid-arrows (make-mermaid-arrows directed-graph)
@@ -145,6 +147,7 @@
           md (s/replace root-template "{{nodes-year-1}}" mermaid-nodes-1)
           md (s/replace md "{{nodes-year-2}}" mermaid-nodes-2)
           md (s/replace md "{{nodes-year-3}}" mermaid-nodes-3)
+          md (s/replace md "{{nodes-year-4}}" mermaid-nodes-4)
           md (s/replace md "{{nodes-other}}" mermaid-nodes-other)
           md (s/replace md "{{arrows}}" mermaid-arrows)
           md (s/replace md "{{conditional courses}}" conditional-courses-ids-list)
@@ -177,8 +180,7 @@
 
           _ (doall (for [course-id courses-ids]
               (let [course-file (format "../pages/%s.md" (name course-id))
-                    ; _ (--- 111)
-                    video-lectures (get-items-by-condition *tabtree* (fn [item] (and (video? item)) (= (:course item) course-id))))
+                    video-lectures (get-items-by-condition *tabtree* (fn [item] (and (video? item)) (= (:course item) course-id)))
                     textbooks (get-items-by-condition *tabtree* (fn [item] (and (textbook? item) (= (:course item) course-id))))
                     books (get-items-by-condition *tabtree* (fn [item] (and (book? item) (= (:course item) course-id))))
                     moocs (get-items-by-condition *tabtree* (fn [item] (and (mooc? item) (= (:course item) course-id))))
@@ -198,8 +200,12 @@
                                               hours (:hours item)
                                               mins (:mins item)
                                               author (:author item)
-                                              author (if (coll? author)
+                                              author (cond
+                                                        (coll? author)
                                                           (->> author (map process-author) (s/join ", "))
+                                                        (not author)
+                                                          nil
+                                                        :else
                                                           (process-author author))
                                               full-title (format "%s%s"
                                                                   title
@@ -216,7 +222,7 @@
                                                                     (if hours (format ", %s часов" hours) "")
                                                                     (if mins (format ", %s минут" mins) ""))
                                                                 (index-of? [:mooc] type)
-                                                                  (format " (%s%s%s)"
+                                                                  (format " (%s%s)"
                                                                     (if weeks (format "%s недель" weeks) "")
                                                                     (if hours (format ", %s часов" hours) ""))
                                                                 :else
@@ -237,7 +243,7 @@
                     websites-list (and websites (->> websites (map make-md-list-item) (s/join "\n")))
                     course-page (format "# %s\n\n%s%s%s%s%s%s%s"
                                         (get-course-name course-id)
-                                        (if moocs (format "## МООКи (MOOCs)\n\n%s\n\n" mooks-list) "")
+                                        (if moocs (format "## МООКи (MOOCs)\n\n%s\n\n" moocs-list) "")
                                         (if video-lectures (format "## Видеолекции\n\n%s\n\n" video-lectures-list) "")
                                         (if textbooks (format "## Учебники\n\n%s\n\n" textbooks-list) "")
                                         (if slides (format "## Слайды\n\n%s\n\n" slides-list) "")

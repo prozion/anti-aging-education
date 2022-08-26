@@ -23,6 +23,10 @@ flowchart LR
   {{nodes-year-3}}
   end
 
+  subgraph year4 [4 курс]
+  {{nodes-year-4}}
+  end
+
   {{nodes-other}}
 
   {{arrows}}
