@@ -209,7 +209,7 @@
 		Химия_высоких_энергий МГУ_Химфак:5 year:5
 		Химия_ионных_и_молекулярных_систем МГУ_Химфак:5 year:5
 		Химическая_кинетика МГУ_Химфак:4 year:4
-		Химическая_термодинамика
+		Химическая_термодинамика year:4
 		Химическая_технология МГУ_Химфак:4 year:4,5
 		Химические_основы_биологических_процессов label:Химосновы_биопроцессов abbr:ХОБП МГУ_Химфак:3 МГУ_ФББ:1 year:3
 		Химия_белка МГУ_Химфак:4 year:4
@@ -357,8 +357,8 @@
 		Строение_молекул_Новаковская course:Строение_молекул type:video author:Новаковская_ЮВ fac:МГУ_Химфак lectures:16 hours:24 url:https://teach-in.ru/course/molecular-structure yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNDGxeTHfnkCcYUHJGsePP5G
 ; Т		
 		Теоретическая_механика_Форш course:Теоретическая_механика type:video author:Форш_ПА fac:МГУ_Химфак lectures:15 hours:21 url:https://teach-in.ru/course/theoretical-mechanics yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNB-O0AhtSPVpiyPJu-_WwSv		
-		Теоретическая_неорганическая_химия_I_Леменовский course:Неорганическая_химия type:video author:Леменовский_ДА fac:МГУ_Химфак lectures:13 hours:17 url:https://teach-in.ru/course/theornotorg1 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNBWv5gqr1IUey0CcCBMhKIw
-		Теоретическая_неорганическая_химия_II_Леменовский course:Неорганическая_химия type:video author:Леменовский_ДА fac:МГУ_Химфак lectures:13 hours:15 url:https://teach-in.ru/course/theornotorg2 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNCqp4S4Wm0197Us3XeBnRsl
+		Теоретическая_неорганическая_химия_I_Леменовский course:Теоретическая_неорганическая_химия type:video author:Леменовский_ДА fac:МГУ_Химфак lectures:13 hours:17 url:https://teach-in.ru/course/theornotorg1 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNBWv5gqr1IUey0CcCBMhKIw
+		Теоретическая_неорганическая_химия_II_Леменовский course:Теоретическая_неорганическая_химия type:video author:Леменовский_ДА fac:МГУ_Химфак lectures:13 hours:15 url:https://teach-in.ru/course/theornotorg2 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNCqp4S4Wm0197Us3XeBnRsl
 		Термодинамические_аспекты_неорганической_химии_Джонсон course:Неорганическая_химия author:Джонсон_Д type:textbook publisher:Мир year:1985 recommended-by:Неорганическая_химия_I_Гудилин
 ;	Ф	
 		Физико-химические_основы_неорганической_химии_Полторак course:Неорганическая_химия author:Полторак_ОМ,Ковба_ЛМ type:textbook publisher:МГУ year:1984 recommended-by:Неорганическая_химия_I_Гудилин
@@ -368,7 +368,7 @@
 		Физическая_химия_II_Коробов course:Физическая_химия type:video author:Коробов_МВ fac:МГУ_Химфак lectures:20 hours:27 url:https://teach-in.ru/course/physical-chemistry-p2 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNBrBhaaco12BK7VktmAT9hK
 		Физические_методы_биохимии_Савицкий course:Методы_клеточной_биологии type:video author:Савицкий_АП fac:МГУ_Химфак lectures:12 hours:17 url:https://teach-in.ru/course/biochemistry-savitskiy yt:https://youtube.com/playlist?list=PLcsjsqLLSfNC1q-Si3M9iInjN-Dp6u9DK
 ;	Х	
-		Химическая_термодинамика_и_кинетика_Успенская course:Физическая_химия type:video author:Успенская_ИА fac:МГУ_Химфак lectures:20 hours:25 url:https://teach-in.ru/course/chemical-thermodynamics yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfND055iOW8nmyYnBVtNXMOIr
+		Химическая_термодинамика_и_кинетика_Успенская course:Химическая_термодинамика type:video author:Успенская_ИА fac:МГУ_Химфак lectures:20 hours:25 url:https://teach-in.ru/course/chemical-thermodynamics yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfND055iOW8nmyYnBVtNXMOIr
 		Химическая_технология_Лазоряк course:Химическая_технология type:video author:Лазоряк_БИ,Хейфец_ЛИ fac:МГУ_Химфак lectures:22 hours:31 url:https://teach-in.ru/course/chemical-engineering yt:https://youtube.com/playlist?list=PLcsjsqLLSfNBsSHa-srTOJfJDsFQIfU2X
 		Химические_основы_биологических_процессов_Копылов course:Биохимия type:video author:Копылов_АМ,Левашов_АВ fac:МГУ_Химфак url:https://teach-in.ru/course/xobp lectures:21 hours:28 yt:https://youtube.com/playlist?list=PLcsjsqLLSfNDFcK0JGTH8ZiISYswBKgHn
 		Химия_для_чайников_Мур course:Общая_химия type:book author:Мур_Д
