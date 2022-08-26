@@ -108,6 +108,7 @@
           mermaid-hrefs (->> courses-ids (map make-mermaid-href) (s/join "\n  "))
           directed-graph (make-directed-graph
                             [
+                            :Общая_химия
                             :Аналитическая_химия
                             :Аналитическая_геометрия
                             :Информатика
