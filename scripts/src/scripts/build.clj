@@ -252,15 +252,25 @@
           website? (is-type? :website)
           slides? (is-type? :slides)
 
+          filter-condition (fn [type-f course-id]
+                              (fn [item]
+                                (and
+                                  (type-f item)
+                                  (cond
+                                    (coll? (:course item))
+                                      (index-of? (:course item) course-id)
+                                    :else
+                                      (= (:course item) course-id)))))
+
           _ (doall (for [course-id courses-ids]
               (let [course-file (format "../pages/%s.md" (name course-id))
-                    video-lectures (get-items-by-condition *tabtree* (fn [item] (and (video? item) (= (:course item) course-id))))
-                    textbooks (get-items-by-condition *tabtree* (fn [item] (and (textbook? item) (= (:course item) course-id))))
-                    books (get-items-by-condition *tabtree* (fn [item] (and (book? item) (= (:course item) course-id))))
-                    moocs (get-items-by-condition *tabtree* (fn [item] (and (mooc? item) (= (:course item) course-id))))
-                    taskbooks (get-items-by-condition *tabtree* (fn [item] (and (taskbook? item) (= (:course item) course-id))))
-                    websites (get-items-by-condition *tabtree* (fn [item] (and (website? item) (= (:course item) course-id))))
-                    slides (get-items-by-condition *tabtree* (fn [item] (and (slides? item) (= (:course item) course-id))))
+                    video-lectures (get-items-by-condition *tabtree* (filter-condition video? course-id))
+                    textbooks (get-items-by-condition *tabtree* (filter-condition textbook? course-id))
+                    books (get-items-by-condition *tabtree* (filter-condition book? course-id))
+                    moocs (get-items-by-condition *tabtree* (filter-condition mooc? course-id))
+                    taskbooks (get-items-by-condition *tabtree* (filter-condition taskbook? course-id))
+                    websites (get-items-by-condition *tabtree* (filter-condition website? course-id))
+                    slides (get-items-by-condition *tabtree* (filter-condition slides? course-id))
                     video-lectures-list (and video-lectures (->> video-lectures (map make-md-list-item) (s/join "\n")))
                     textbooks-list (and textbooks (->> textbooks (map make-md-list-item) (s/join "\n")))
                     books-list (and books (->> books (map make-md-list-item) (s/join "\n")))

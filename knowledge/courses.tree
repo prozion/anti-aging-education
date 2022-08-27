@@ -286,7 +286,7 @@
 ; А
 		Анализ_данных_в_среде_R_Карпов course:Язык_R type:video author:Карпов_А,Иванчей_И fac:Stepic lectures:19 hours:6 mooc-url:https://stepik.org/course/129/promo url:https://www.youtube.com/playlist?list=PLwwk4BHih4fj1p79gMWSk0M-DaYJ9teiN
 		Аналитическая_химия_Шеховцева course:Аналитическая_химия type:video author:Шеховцева_ТН fac:МГУ_Химфак lectures:12 hours:16 url:https://teach-in.ru/course/analitchem yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfND8IuapZOfjuQtbCayF8U_R
-		Анатомия_и_физиология_для_чайников_Одья course:Физиология author:Одья_Э type:book recommended-by:Янов_А
+		Анатомия_и_физиология_для_чайников_Одья course:Физиология,Анатомия author:Одья_Э type:book recommended-by:Янов_А
 ; Б
 		Биоинформатика_Миронов course:Биоинформатика type:video author:Миронов_АА fac:МГУ_ФББ lectures:17 hours:21 mins:30 url:https://teach-in.ru/course/bioinformatics-mironov yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNCXR1AaXbADeXyQYr96JXke
 		Биология_5-11_класс_Пасечкин course:Общая_биология type:textbook author:Пасечкин_ВВ recommended-by:Янов_А
@@ -398,7 +398,7 @@
 		Язык_Clojure_Прокопов course:Функциональное_программирование type:video author:Прокопов_Н hours:17 url:https://clojurecourse.by/
 ; 0-9
 		100_часов_школьной_биологии_Дубынин course:Общая_биология type:video author:Дубынин_ВА fac:МГУ_Биофак lectures:11 hours:16 url:https://teach-in.ru/course/one-hundred-hours-of-school-biology-general-biology yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNDiVZaaNUWI0vEKdKZv5J8U
-		100_часов_школьной_биологии_Человек_Дубынин course:Физиология type:video author:Дубынин_ВА fac:МГУ_Биофак lectures:28 hours:33 url:https://teach-in.ru/course/one-hundred-hours-of-school-biology yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNDHFikQVZd2XOqF5FK56L3D
+		100_часов_школьной_биологии_Человек_Дубынин course:Физиология,Анатомия type:video author:Дубынин_ВА fac:МГУ_Биофак lectures:28 hours:33 url:https://teach-in.ru/course/one-hundred-hours-of-school-biology yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNDHFikQVZd2XOqF5FK56L3D
 ; I
 		Introduction_to_Biology_Lander course:Общая_биология type:mooc author:Lander_E fac:MIT_Biology weeks:16 hours:160 url:https://www.edx.org/course/introduction-to-biology-the-secret-of-life-3
 		Introduction_to_modern_virology_Dimmock course:Вирусология type:textbook author:Dimmock_N pages:531 url:https://disk.yandex.ru/i/fImLskaf38ttFg recommended-by:Янов_А
