@@ -88,9 +88,9 @@
                 directed-graph))))))
 
 (defn get-items-by-condition [tabtree condition]
-  (let [result (filter condition tabtree)
+  (let [result (filter condition (vals tabtree))
         result (and (not-empty? result) result)
-        result (and result (sort (fn [item1 item2] (compare (:__id item1) (:__id item2))) (sort (vals tabtree))) result)]
+        result (and result (sort (fn [item1 item2] (compare (:__id item1) (:__id item2))) result))]
     result))
 
 (defn get-nodes-from-directed-graph [directed-graph]
@@ -103,6 +103,64 @@
 (def biochemistry-centered-follow-ups-file "../knowledge/biochemistry-follows.tree")
 (def readme-file "../README.md")
 (def uni-track-file "../Университетские_предметы.md")
+
+(defn process-author [author]
+  (-> author name (s/replace #"_" " ") (s/replace #"([A-ZА-Я])([A-ZА-Я])" "$1.$2")))
+
+(defn with-author? [type]
+  (index-of? [:textbook :book :slides :taskbook] type))
+
+(defn with-faculty? [item]
+  (:fac item))
+
+(defn make-md-list-item [item]
+  (let [title (textify (:__id item))
+        type (:type item)
+        title (if (with-author? type)
+                    (-> title (s/split #" ") butlast (#(s/join " " %)))
+                    title)
+        url (item :url)
+        weeks (:weeks item)
+        lectures (:lectures item)
+        hours (:hours item)
+        mins (:mins item)
+        author (:author item)
+        author (cond
+                  (coll? author)
+                    (->> author (map process-author) (s/join ", "))
+                  (not author)
+                    nil
+                  :else
+                    (process-author author))
+        full-title (format "%s%s"
+                            title
+                            (if author (format ", %s" author) ""))
+        unifaculty (:fac item)
+        [uni faculty] (and unifaculty (s/split (name unifaculty) #"_"))
+        full-title (cond
+                      (with-faculty? item)
+                        (format "%s, %s %s" full-title uni faculty)
+                      :else
+                        full-title)
+        additional-info (cond
+                          (index-of? [:video] type)
+                            (format " (%s%s%s)"
+                              (if lectures (format "%s лекций" lectures) "")
+                              (if hours (format ", %s часов" hours) "")
+                              (if mins (format ", %s минут" mins) ""))
+                          (index-of? [:mooc] type)
+                            (format " (%s%s)"
+                              (if weeks (format "%s недель" weeks) "")
+                              (if hours (format ", %s часов" hours) ""))
+                          :else
+                            "")
+
+        ]
+    (format "* %s%s"
+            (if url
+              (format "[%s](%s)" full-title url)
+              full-title)
+            additional-info)))
 
 (defn make-md []
   (binding [*tabtree* (tabtree/parse-tab-tree tabtree-file)]
@@ -196,60 +254,13 @@
 
           _ (doall (for [course-id courses-ids]
               (let [course-file (format "../pages/%s.md" (name course-id))
-                    video-lectures (get-items-by-condition *tabtree* (fn [item] (and (video? item)) (= (:course item) course-id)))
+                    video-lectures (get-items-by-condition *tabtree* (fn [item] (and (video? item) (= (:course item) course-id))))
                     textbooks (get-items-by-condition *tabtree* (fn [item] (and (textbook? item) (= (:course item) course-id))))
                     books (get-items-by-condition *tabtree* (fn [item] (and (book? item) (= (:course item) course-id))))
                     moocs (get-items-by-condition *tabtree* (fn [item] (and (mooc? item) (= (:course item) course-id))))
                     taskbooks (get-items-by-condition *tabtree* (fn [item] (and (taskbook? item) (= (:course item) course-id))))
                     websites (get-items-by-condition *tabtree* (fn [item] (and (website? item) (= (:course item) course-id))))
                     slides (get-items-by-condition *tabtree* (fn [item] (and (slides? item) (= (:course item) course-id))))
-                    process-author (fn [author] (-> author name (s/replace #"_" " ") (s/replace #"([A-ZА-Я])([A-ZА-Я])" "$1.$2")))
-                    make-md-list-item (fn [item]
-                                        (let [title (textify (:__id item))
-                                              type (:type item)
-                                              title (if (index-of? [:book :textbook :video] type)
-                                                          (-> title (s/split #" ") butlast (#(s/join " " %)))
-                                                          title)
-                                              url (item :url)
-                                              weeks (:weeks item)
-                                              lectures (:lectures item)
-                                              hours (:hours item)
-                                              mins (:mins item)
-                                              author (:author item)
-                                              author (cond
-                                                        (coll? author)
-                                                          (->> author (map process-author) (s/join ", "))
-                                                        (not author)
-                                                          nil
-                                                        :else
-                                                          (process-author author))
-                                              full-title (format "%s%s"
-                                                                  title
-                                                                  (if author (format ", %s" author) ""))
-                                              unifaculty (:fac item)
-                                              [uni faculty] (and unifaculty (s/split (name unifaculty) #"_"))
-                                              full-title (if unifaculty
-                                                            (format "%s, %s %s" full-title uni faculty)
-                                                            full-title)
-                                              additional-info (cond
-                                                                (index-of? [:video] type)
-                                                                  (format " (%s%s%s)"
-                                                                    (if lectures (format "%s лекций" lectures) "")
-                                                                    (if hours (format ", %s часов" hours) "")
-                                                                    (if mins (format ", %s минут" mins) ""))
-                                                                (index-of? [:mooc] type)
-                                                                  (format " (%s%s)"
-                                                                    (if weeks (format "%s недель" weeks) "")
-                                                                    (if hours (format ", %s часов" hours) ""))
-                                                                :else
-                                                                  "")
-
-                                              ]
-                                          (format "* %s%s"
-                                                  (if url
-                                                    (format "[%s](%s)" full-title url)
-                                                    full-title)
-                                                  additional-info)))
                     video-lectures-list (and video-lectures (->> video-lectures (map make-md-list-item) (s/join "\n")))
                     textbooks-list (and textbooks (->> textbooks (map make-md-list-item) (s/join "\n")))
                     books-list (and books (->> books (map make-md-list-item) (s/join "\n")))
