@@ -146,6 +146,7 @@ flowchart LR
   click Биотехнология href "https://github.com/prozion/anti-aging-education/blob/main/pages/Биотехнология.md" _blank
   click Биохимия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Биохимия.md" _blank
   click Биохимия_растений href "https://github.com/prozion/anti-aging-education/blob/main/pages/Биохимия_растений.md" _blank
+  click Биохимия_старения href "https://github.com/prozion/anti-aging-education/blob/main/pages/Биохимия_старения.md" _blank
   click Биохимические_процессы_в_клетках href "https://github.com/prozion/anti-aging-education/blob/main/pages/Биохимические_процессы_в_клетках.md" _blank
   click Биоэнергетика href "https://github.com/prozion/anti-aging-education/blob/main/pages/Биоэнергетика.md" _blank
   click Биоэтика href "https://github.com/prozion/anti-aging-education/blob/main/pages/Биоэтика.md" _blank
@@ -383,45 +384,66 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-  Эпигенетика[Эпигенетика]:::href
-  Молекулярная_генетика[Молекулярная генетика]:::href
-  Биохимия[Биохимия]:::href
-  Молекулярная_биология[Молекулярная биология]:::href
+  Квантовая_механика[Квантовая механика]:::href
+  Теоретическая_механика[Теоретическая механика]:::href
   Строение_молекул[Строение молекул]:::href
-  Квантовая_химия[Квантовая химия]:::href
   Органическая_химия[Органическая химия]:::href
+  Молекулярная_генетика[Молекулярная генетика]:::href
+  Молекулярная_биология[Молекулярная биология]:::href
+  Квантовая_химия[Квантовая химия]:::href
+  Биохимия[Биохимия]:::href
+  Дифференциальные_уравнения[Дифференциальные уравнения]:::href
+  Эпигенетика[Эпигенетика]:::href
+  Линейная_алгебра[Линейная алгебра]:::href
+  Общая_физика[Общая физика]:::href
+  Теория_функции_комплексного_переменного[Теория функции комплексного переменного]:::href
+  Неорганическая_химия[Неорганическая химия]:::href
   Кариология[Кариология]:::href
   Цитология[Цитология]:::href
-  Неорганическая_химия[Неорганическая химия]:::href
+  Математический_анализ[Математический анализ]:::href
 
-  Эпигенетика -.-> Биохимия
-  Эпигенетика -.-> Молекулярная_биология
-  Эпигенетика -.-> Кариология
+  Квантовая_механика -.-> Теоретическая_механика
+  Теоретическая_механика -.-> Дифференциальные_уравнения
+  Теоретическая_механика -.-> Линейная_алгебра
+  Теоретическая_механика -.-> Общая_физика
+  Теоретическая_механика -.-> Теория_функции_комплексного_переменного
+  Строение_молекул -.-> Квантовая_химия
+  Органическая_химия -.-> Квантовая_химия
+  Органическая_химия -.-> Неорганическая_химия
   Молекулярная_генетика -.-> Биохимия
   Молекулярная_генетика -.-> Молекулярная_биология
   Молекулярная_генетика -.-> Кариология
+  Молекулярная_биология -.-> Цитология
+  Молекулярная_биология -.-> Кариология
+  Квантовая_химия -.-> Неорганическая_химия
+  Квантовая_химия -.-> Квантовая_механика
   Биохимия -.-> Молекулярная_биология
   Биохимия -.-> Строение_молекул
   Биохимия -.-> Квантовая_химия
   Биохимия -.-> Органическая_химия
-  Молекулярная_биология -.-> Цитология
-  Молекулярная_биология -.-> Кариология
-  Строение_молекул -.-> Квантовая_химия
-  Квантовая_химия -.-> Неорганическая_химия
-  Органическая_химия -.-> Квантовая_химия
-  Органическая_химия -.-> Неорганическая_химия
+  Дифференциальные_уравнения -.-> Математический_анализ
+  Эпигенетика -.-> Биохимия
+  Эпигенетика -.-> Молекулярная_биология
+  Эпигенетика -.-> Кариология
   
 
   classDef href color:#0969D7
 
-  click Эпигенетика href "https://github.com/prozion/anti-aging-education/blob/main/pages/Эпигенетика.md" _blank
-  click Молекулярная_генетика href "https://github.com/prozion/anti-aging-education/blob/main/pages/Молекулярная_генетика.md" _blank
-  click Биохимия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Биохимия.md" _blank
-  click Молекулярная_биология href "https://github.com/prozion/anti-aging-education/blob/main/pages/Молекулярная_биология.md" _blank
+  click Квантовая_механика href "https://github.com/prozion/anti-aging-education/blob/main/pages/Квантовая_механика.md" _blank
+  click Теоретическая_механика href "https://github.com/prozion/anti-aging-education/blob/main/pages/Теоретическая_механика.md" _blank
   click Строение_молекул href "https://github.com/prozion/anti-aging-education/blob/main/pages/Строение_молекул.md" _blank
-  click Квантовая_химия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Квантовая_химия.md" _blank
   click Органическая_химия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Органическая_химия.md" _blank
+  click Молекулярная_генетика href "https://github.com/prozion/anti-aging-education/blob/main/pages/Молекулярная_генетика.md" _blank
+  click Молекулярная_биология href "https://github.com/prozion/anti-aging-education/blob/main/pages/Молекулярная_биология.md" _blank
+  click Квантовая_химия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Квантовая_химия.md" _blank
+  click Биохимия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Биохимия.md" _blank
+  click Дифференциальные_уравнения href "https://github.com/prozion/anti-aging-education/blob/main/pages/Дифференциальные_уравнения.md" _blank
+  click Эпигенетика href "https://github.com/prozion/anti-aging-education/blob/main/pages/Эпигенетика.md" _blank
+  click Линейная_алгебра href "https://github.com/prozion/anti-aging-education/blob/main/pages/Линейная_алгебра.md" _blank
+  click Общая_физика href "https://github.com/prozion/anti-aging-education/blob/main/pages/Общая_физика.md" _blank
+  click Теория_функции_комплексного_переменного href "https://github.com/prozion/anti-aging-education/blob/main/pages/Теория_функции_комплексного_переменного.md" _blank
+  click Неорганическая_химия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Неорганическая_химия.md" _blank
   click Кариология href "https://github.com/prozion/anti-aging-education/blob/main/pages/Кариология.md" _blank
   click Цитология href "https://github.com/prozion/anti-aging-education/blob/main/pages/Цитология.md" _blank
-  click Неорганическая_химия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Неорганическая_химия.md" _blank
+  click Математический_анализ href "https://github.com/prozion/anti-aging-education/blob/main/pages/Математический_анализ.md" _blank
 ```
