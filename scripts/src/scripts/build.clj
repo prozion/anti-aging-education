@@ -162,7 +162,7 @@
           md (s/replace md "{{hrefs}}" mermaid-hrefs)
 
           biochemistry-links-tabtree (tabtree/parse-tab-tree biochemistry-centered-follow-ups-file)
-          biochemistry-directed-graph (make-directed-graph [:Эпигенетика :Молекулярная_генетика] biochemistry-links-tabtree)
+          biochemistry-directed-graph (make-directed-graph [:Биохимия_старения] biochemistry-links-tabtree)
           mermaid-biochemistry-nodes-ids (get-nodes-from-directed-graph biochemistry-directed-graph)
           mermaid-biochemistry-nodes (->> mermaid-biochemistry-nodes-ids (map make-mermaid-node) (s/join "\n  "))
           mermaid-biochemistry-arrows (make-mermaid-arrows biochemistry-directed-graph)
