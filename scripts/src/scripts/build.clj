@@ -88,22 +88,28 @@
                 directed-graph))))))
 
 (defn get-items-by-condition [tabtree condition]
-  (let [result (filter condition (vals tabtree))]
-    (if (empty? result) nil result)))
+  (let [result (filter condition tabtree)
+        result (and (not-empty? result) result)
+        result (and result (sort (fn [item1 item2] (compare (:__id item1) (:__id item2))) (sort (vals tabtree))) result)]
+    result))
 
 (defn get-nodes-from-directed-graph [directed-graph]
   (-> (concat (keys directed-graph) (vals directed-graph)) flatten distinct))
 
-(def tabtree-file "../knowledge/biochemist.tree")
-(def root-template-file "../templates/biochemist.template.md")
+(def tabtree-file "../knowledge/courses.tree")
+(def readme-template-file "../templates/README.template.md")
+(def uni-track-template-file "../templates/Университетские_предметы.template.md")
 ; (def page-template-file "../templates/page.template.md")
 (def biochemistry-centered-follow-ups-file "../knowledge/biochemistry-follows.tree")
-(def root-file "../biochemist.md")
+(def readme-file "../README.md")
+(def uni-track-file "../Университетские_предметы.md")
 
 (defn make-md []
   (binding [*tabtree* (tabtree/parse-tab-tree tabtree-file)]
     (let [
-          root-template (slurp root-template-file)
+          readme-template (slurp readme-template-file)
+          uni-track-template (slurp uni-track-template-file)
+
           courses-ids (utils/$t биохимик.курсы *tabtree*)
           mermaid-hrefs (->> courses-ids (map make-mermaid-href) (s/join "\n  "))
           directed-graph (make-directed-graph
@@ -150,7 +156,7 @@
 
           conditional-courses-ids-list (->> courses-ids (map *tabtree*) (filter #(:conditional %)) (map :__id) (map name) (s/join ","))
 
-          md (s/replace root-template "{{nodes-year-1}}" mermaid-nodes-1)
+          md (s/replace uni-track-template "{{nodes-year-1}}" mermaid-nodes-1)
           md (s/replace md "{{nodes-year-2}}" mermaid-nodes-2)
           md (s/replace md "{{nodes-year-3}}" mermaid-nodes-3)
           md (s/replace md "{{nodes-year-4}}" mermaid-nodes-4)
@@ -160,6 +166,7 @@
           md (s/replace md "{{arrows}}" mermaid-arrows)
           md (s/replace md "{{conditional courses}}" conditional-courses-ids-list)
           md (s/replace md "{{hrefs}}" mermaid-hrefs)
+          uni-track-md md
 
           biochemistry-links-tabtree (tabtree/parse-tab-tree biochemistry-centered-follow-ups-file)
           biochemistry-directed-graph (make-directed-graph [:Биохимия_старения] biochemistry-links-tabtree)
@@ -168,9 +175,10 @@
           mermaid-biochemistry-arrows (make-mermaid-arrows biochemistry-directed-graph)
           mermaid-biochemistry-hrefs (->> mermaid-biochemistry-nodes-ids (map make-mermaid-href) (s/join "\n  "))
 
-          md (s/replace md "{{biochemistry-nodes}}" mermaid-biochemistry-nodes)
+          md (s/replace readme-template "{{biochemistry-nodes}}" mermaid-biochemistry-nodes)
           md (s/replace md "{{biochemistry-arrows}}" mermaid-biochemistry-arrows)
           md (s/replace md "{{biochemistry-hrefs}}" mermaid-biochemistry-hrefs)
+          readme-md md
 
           is-type? (fn [type-to-compare]
                       (fn [item]
@@ -261,7 +269,8 @@
                     ]
                 (spit course-file course-page))))
           ]
-      (spit root-file md))))
+      (spit readme-file readme-md)
+      (spit uni-track-file uni-track-md))))
 
 (defn run []
   (text/titlefy "foo")
