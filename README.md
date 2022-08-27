@@ -21,18 +21,11 @@ flowchart TD
   Теоретическая_неорганическая_химия[Теоретическая неорганическая химия]:::href
   Биохимия[Биохимия]:::href
   Неорганическая_химия[Неорганическая химия]:::href
-  Дифференциальные_уравнения[Дифференциальные уравнения]:::href
   Общая_физика[Общая физика]:::href
-  Линейная_алгебра[Линейная алгебра]:::href
-  Теория_функции_комплексного_переменного[Теория функции комплексного переменного]:::href
   Анатомия[Анатомия]:::href
-  Математический_анализ[Математический анализ]:::href
 
   Общая_химия -.-> Общая_физика
-  Теоретическая_механика -.-> Дифференциальные_уравнения
-  Теоретическая_механика -.-> Линейная_алгебра
   Теоретическая_механика -.-> Общая_физика
-  Теоретическая_механика -.-> Теория_функции_комплексного_переменного
   Физиология -.-> Анатомия
   Квантовая_физика -.-> Теоретическая_механика
   Строение_молекул -.-> Квантовая_химия
@@ -49,7 +42,6 @@ flowchart TD
   Биохимия -.-> Квантовая_химия
   Биохимия -.-> Органическая_химия
   Неорганическая_химия -.-> Общая_химия
-  Дифференциальные_уравнения -.-> Математический_анализ
   
 
   classDef href color:#0969D7
@@ -67,12 +59,8 @@ flowchart TD
   click Теоретическая_неорганическая_химия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Теоретическая_неорганическая_химия.md" _blank
   click Биохимия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Биохимия.md" _blank
   click Неорганическая_химия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Неорганическая_химия.md" _blank
-  click Дифференциальные_уравнения href "https://github.com/prozion/anti-aging-education/blob/main/pages/Дифференциальные_уравнения.md" _blank
   click Общая_физика href "https://github.com/prozion/anti-aging-education/blob/main/pages/Общая_физика.md" _blank
-  click Линейная_алгебра href "https://github.com/prozion/anti-aging-education/blob/main/pages/Линейная_алгебра.md" _blank
-  click Теория_функции_комплексного_переменного href "https://github.com/prozion/anti-aging-education/blob/main/pages/Теория_функции_комплексного_переменного.md" _blank
   click Анатомия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Анатомия.md" _blank
-  click Математический_анализ href "https://github.com/prozion/anti-aging-education/blob/main/pages/Математический_анализ.md" _blank
 ```
 
 
