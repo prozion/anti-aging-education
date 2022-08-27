@@ -108,7 +108,7 @@
   (-> author name (s/replace #"_" " ") (s/replace #"([A-ZА-Я])([A-ZА-Я])" "$1.$2")))
 
 (defn with-author? [type]
-  (index-of? [:textbook :book :slides :taskbook] type))
+  (index-of? [:video :textbook :book :slides :taskbook] type))
 
 (defn with-faculty? [item]
   (:fac item))

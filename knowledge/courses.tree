@@ -295,7 +295,7 @@
 		Биология_Тейлор course:Общая_биология type:textbook author:Тейлор_Д,Грин_Н vols:3 recommended-by:Янов_А
 		Биология_Campbell_Урри course:Общая_биология type:textbook author:Урри_ЛА vols:3 recommended-by:Янов_А d:"1 том на русском, 2-3 том только на английском"
 		Бионеорганическая_химия_Милаева course:Бионеорганическая_химия type:video author:Милаева_ЕР fac:МГУ_Химфак lectures:7 hours:9 mins:30 url:https://teach-in.ru/course/bioneorganch yt:https://youtube.com/playlist?list=PLcsjsqLLSfNDOQFu5FLvE3rOF7elegEJb
-		Биоорганическая_химия__Зык course:Биохимия type:video author:Зык_НВ fac:МГУ_Химфак lectures:19 hours:23 url:https://teach-in.ru/course/bioorganic-chemistry-p2 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNCbic22WnhfoL7k_xlmLur8
+		Биоорганическая_химия_1_Зык course:Биохимия type:video author:Зык_НВ fac:МГУ_Химфак lectures:19 hours:23 url:https://teach-in.ru/course/bioorganic-chemistry-p2 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNCbic22WnhfoL7k_xlmLur8
 		Биоорганическая_химия_2_Зык course:Биохимия type:video author:Зык_НВ fac:МГУ_Химфак lectures:10 hours:12 mins:30 url:https://teach-in.ru/course/bioorganic-chemistry-2 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfND2es6QmFfBbLoIeNzdpFWx
 		Биофизика_1_Рубин course:Биофизика type:video author:Рубин_АБ fac:МГУ_Биофак lectures:13 hours:18 url:https://teach-in.ru/course/biophysics-rubin-part-1
 		Биофизика_2_Рубин course:Биофизика type:video author:Рубин_АБ fac:МГУ_Биофак lectures:9 hours:13 url:https://teach-in.ru/course/biophysics-rubin-part-2
