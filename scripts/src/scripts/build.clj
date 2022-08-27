@@ -108,17 +108,19 @@
           mermaid-hrefs (->> courses-ids (map make-mermaid-href) (s/join "\n  "))
           directed-graph (make-directed-graph
                             [
-                            :Общая_химия
-                            :Аналитическая_химия
                             :Аналитическая_геометрия
+                            :Аналитическая_химия
                             :Информатика
                             :Линейная_алгебра
                             :Математический_анализ
                             :Механика
                             :Неорганическая_химия
+                            :Общая_химия
+                            :Общая_биология
+                            :Общая_физика
                             :Основы_радиохимии
-                            :Химическая_биология
                             :Физиология
+                            :Химическая_биология
                             ]
                             *tabtree*)
           nodes-ids (get-nodes-from-directed-graph directed-graph)
@@ -131,13 +133,17 @@
           nodes-ids-2 (filter-nodes-by-year 2)
           nodes-ids-3 (filter-nodes-by-year 3)
           nodes-ids-4 (filter-nodes-by-year 4)
-          nodes-ids-other (minus nodes-ids nodes-ids-1 nodes-ids-2 nodes-ids-3 nodes-ids-4)
+          nodes-ids-5 (filter-nodes-by-year 5)
+          nodes-ids-6 (filter-nodes-by-year 6)
+          nodes-ids-other (minus nodes-ids nodes-ids-1 nodes-ids-2 nodes-ids-3 nodes-ids-4 nodes-ids-5 nodes-ids-6)
 
           make-mermaid-nodes-block (fn [nodes-ids] (->> nodes-ids (map make-mermaid-node) (s/join "\n  ")))
           mermaid-nodes-1 (make-mermaid-nodes-block nodes-ids-1)
           mermaid-nodes-2 (make-mermaid-nodes-block nodes-ids-2)
           mermaid-nodes-3 (make-mermaid-nodes-block nodes-ids-3)
           mermaid-nodes-4 (make-mermaid-nodes-block nodes-ids-4)
+          mermaid-nodes-5 (make-mermaid-nodes-block nodes-ids-5)
+          mermaid-nodes-6 (make-mermaid-nodes-block nodes-ids-6)
           mermaid-nodes-other (make-mermaid-nodes-block nodes-ids-other)
 
           mermaid-arrows (make-mermaid-arrows directed-graph)
@@ -148,6 +154,8 @@
           md (s/replace md "{{nodes-year-2}}" mermaid-nodes-2)
           md (s/replace md "{{nodes-year-3}}" mermaid-nodes-3)
           md (s/replace md "{{nodes-year-4}}" mermaid-nodes-4)
+          md (s/replace md "{{nodes-year-5}}" mermaid-nodes-5)
+          md (s/replace md "{{nodes-year-6}}" mermaid-nodes-6)
           md (s/replace md "{{nodes-other}}" mermaid-nodes-other)
           md (s/replace md "{{arrows}}" mermaid-arrows)
           md (s/replace md "{{conditional courses}}" conditional-courses-ids-list)

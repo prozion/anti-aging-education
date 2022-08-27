@@ -13,6 +13,7 @@
 flowchart LR
   subgraph year1 [1 курс]
   Общая_химия[Общая химия]:::href
+  Компьютерный_инструментарий[Компьютерный инструментарий]:::href
   Механика[Механика]:::href
   Информатика[Информатика]:::href
   Математический_анализ[Математический анализ]:::href
@@ -31,6 +32,7 @@ flowchart LR
   Аналитическая_химия[Аналитическая химия]:::href
   Математическая_статистика[Математическая статистика]:::href
   Оптика[Оптика]:::href
+  Биоинформатика[Биоинформатика]:::href
   Аналитическая_биохимия[Аналитическая биохимия]:::href
   end
 
@@ -39,10 +41,10 @@ flowchart LR
   Физиология[Физиология]:::href
   Строение_вещества[Строение вещества]:::href
   Кристаллохимия[Кристаллохимия]:::href
+  Патофизиология[Патофизиология]:::href
   Квантовая_химия[Квантовая химия]:::href
   Иммунология[Иммунология]:::href
   Строение_молекул[Строение молекул]:::href
-  Биоинформатика[Биоинформатика]:::href
   Математические_методы_химии[Математические методы химии]:::href
   Органическая_химия[Органическая химия]:::href
   Статистическая_физика[Статистическая физика]:::href
@@ -53,23 +55,39 @@ flowchart LR
   Химическая_термодинамика[Химическая термодинамика]:::href
   end
 
+  subgraph year5 [5 курс]
+  Язык_программирования_С++[C++]:::href
+  Язык_R[Язык R]:::href
+  Язык_SQL[Язык SQL]:::href
+  end
+
+  subgraph year6 [6 курс]
+  Онкология[Онкология]:::href
+  end
+
   
 
   Общая_химия -.-> Неорганическая_химия
   Квантовая_механика -.-> Квантовая_химия
+  Компьютерный_инструментарий -.-> Язык_программирования_С++
+  Компьютерный_инструментарий -.-> Язык_R
+  Компьютерный_инструментарий -.-> Язык_SQL
   Теоретическая_механика -.-> Теория_поля
   Теоретическая_механика -.-> Физическая_химия
   Теоретическая_механика -.-> Квантовая_механика
   Физиология -.-> Иммунология
+  Физиология -.-> Патофизиология
   Строение_вещества -.-> Строение_молекул
   Теория_вероятностей -.-> Математическая_статистика
   Механика -.-> Оптика
   Механика -.-> Теоретическая_механика
   Реальная_структура_твердого_тела -.-> Строение_вещества
   Кристаллохимия -.-> Реальная_структура_твердого_тела
+  Патофизиология -.-> Онкология
   Уравнения_математической_физики -.-> Физическая_химия
   Квантовая_химия -.-> Строение_молекул
   Информатика -.-> Биоинформатика
+  Информатика -.-> Компьютерный_инструментарий
   Математический_анализ -.-> Уравнения_математической_физики
   Математический_анализ -.-> Дифференциальные_уравнения
   Математический_анализ -.-> Теория_поля
@@ -92,7 +110,7 @@ flowchart LR
 
   class Анатомия,Высшая_математика,Информатика,Общая_биология,Общая_физика,Общая_химия cond
 
-  click Алгогритмы_в_биоинформатике href "https://github.com/prozion/anti-aging-education/blob/main/pages/Алгогритмы_в_биоинформатике.md" _blank
+  click Алгоритмы_в_биоинформатике href "https://github.com/prozion/anti-aging-education/blob/main/pages/Алгоритмы_в_биоинформатике.md" _blank
   click Альгология href "https://github.com/prozion/anti-aging-education/blob/main/pages/Альгология.md" _blank
   click Аналитическая_химия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Аналитическая_химия.md" _blank
   click Аналитическая_биохимия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Аналитическая_биохимия.md" _blank
@@ -136,6 +154,7 @@ flowchart LR
   click Геронтология href "https://github.com/prozion/anti-aging-education/blob/main/pages/Геронтология.md" _blank
   click Гистология href "https://github.com/prozion/anti-aging-education/blob/main/pages/Гистология.md" _blank
   click Диагностика_наноматериалов href "https://github.com/prozion/anti-aging-education/blob/main/pages/Диагностика_наноматериалов.md" _blank
+  click Дизайн_лекарств href "https://github.com/prozion/anti-aging-education/blob/main/pages/Дизайн_лекарств.md" _blank
   click Динамическая_биохимия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Динамическая_биохимия.md" _blank
   click Дискретная_математика href "https://github.com/prozion/anti-aging-education/blob/main/pages/Дискретная_математика.md" _blank
   click Дифференциальные_уравнения href "https://github.com/prozion/anti-aging-education/blob/main/pages/Дифференциальные_уравнения.md" _blank
@@ -161,11 +180,13 @@ flowchart LR
   click Кинетика_биотехнологических_процессов href "https://github.com/prozion/anti-aging-education/blob/main/pages/Кинетика_биотехнологических_процессов.md" _blank
   click Кинетика_ферментативных_реакций href "https://github.com/prozion/anti-aging-education/blob/main/pages/Кинетика_ферментативных_реакций.md" _blank
   click Кинетика_и_механизмы_образования_макромолекул href "https://github.com/prozion/anti-aging-education/blob/main/pages/Кинетика_и_механизмы_образования_макромолекул.md" _blank
+  click Кинетика_процессов_на_межфазных_границах href "https://github.com/prozion/anti-aging-education/blob/main/pages/Кинетика_процессов_на_межфазных_границах.md" _blank
   click Кинетика_реакций_в_конденсированной_фазе href "https://github.com/prozion/anti-aging-education/blob/main/pages/Кинетика_реакций_в_конденсированной_фазе.md" _blank
   click Клеточная_инженерия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Клеточная_инженерия.md" _blank
   click Клеточный_цикл_и_клеточная_гибель href "https://github.com/prozion/anti-aging-education/blob/main/pages/Клеточный_цикл_и_клеточная_гибель.md" _blank
   click Коллоидная_химия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Коллоидная_химия.md" _blank
   click Комбинаторика href "https://github.com/prozion/anti-aging-education/blob/main/pages/Комбинаторика.md" _blank
+  click Компьютерный_дизайн_лекарственных_веществ href "https://github.com/prozion/anti-aging-education/blob/main/pages/Компьютерный_дизайн_лекарственных_веществ.md" _blank
   click Компьютерный_инструментарий href "https://github.com/prozion/anti-aging-education/blob/main/pages/Компьютерный_инструментарий.md" _blank
   click Компьютерные_методы_в_биологических_исследованиях href "https://github.com/prozion/anti-aging-education/blob/main/pages/Компьютерные_методы_в_биологических_исследованиях.md" _blank
   click Кристаллохимия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Кристаллохимия.md" _blank
@@ -199,6 +220,7 @@ flowchart LR
   click Методы_синтеза_и_модификации_гетероциклических_соединений href "https://github.com/prozion/anti-aging-education/blob/main/pages/Методы_синтеза_и_модификации_гетероциклических_соединений.md" _blank
   click Методы_физической_биохимии href "https://github.com/prozion/anti-aging-education/blob/main/pages/Методы_физической_биохимии.md" _blank
   click Механизмы_трансформации_энергии_в_нативных_и_гибридных_системах href "https://github.com/prozion/anti-aging-education/blob/main/pages/Механизмы_трансформации_энергии_в_нативных_и_гибридных_системах.md" _blank
+  click Механизмы_ферментативного_катализа href "https://github.com/prozion/anti-aging-education/blob/main/pages/Механизмы_ферментативного_катализа.md" _blank
   click Механизмы_ферментативных_реакций href "https://github.com/prozion/anti-aging-education/blob/main/pages/Механизмы_ферментативных_реакций.md" _blank
   click Механика href "https://github.com/prozion/anti-aging-education/blob/main/pages/Механика.md" _blank
   click Микология href "https://github.com/prozion/anti-aging-education/blob/main/pages/Микология.md" _blank
@@ -232,8 +254,10 @@ flowchart LR
   click Онкоиммунология href "https://github.com/prozion/anti-aging-education/blob/main/pages/Онкоиммунология.md" _blank
   click Онкология href "https://github.com/prozion/anti-aging-education/blob/main/pages/Онкология.md" _blank
   click Оптика href "https://github.com/prozion/anti-aging-education/blob/main/pages/Оптика.md" _blank
+  click Оптимизация_структурных_прототипов_лекарств href "https://github.com/prozion/anti-aging-education/blob/main/pages/Оптимизация_структурных_прототипов_лекарств.md" _blank
   click Организация_науки href "https://github.com/prozion/anti-aging-education/blob/main/pages/Организация_науки.md" _blank
   click Органическая_химия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Органическая_химия.md" _blank
+  click Органические_наноматериалы href "https://github.com/prozion/anti-aging-education/blob/main/pages/Органические_наноматериалы.md" _blank
   click Органический_синтез href "https://github.com/prozion/anti-aging-education/blob/main/pages/Органический_синтез.md" _blank
   click Палеобиология href "https://github.com/prozion/anti-aging-education/blob/main/pages/Палеобиология.md" _blank
   click Патология_экспериментальных_животных href "https://github.com/prozion/anti-aging-education/blob/main/pages/Патология_экспериментальных_животных.md" _blank
@@ -248,6 +272,8 @@ flowchart LR
   click Радиационная_химия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Радиационная_химия.md" _blank
   click Радиационная_химия_полимеров href "https://github.com/prozion/anti-aging-education/blob/main/pages/Радиационная_химия_полимеров.md" _blank
   click Радиохимия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Радиохимия.md" _blank
+  click Растворы_полимеров href "https://github.com/prozion/anti-aging-education/blob/main/pages/Растворы_полимеров.md" _blank
+  click Реакционная_способность_органических_соединений href "https://github.com/prozion/anti-aging-education/blob/main/pages/Реакционная_способность_органических_соединений.md" _blank
   click Реальная_структура_твердого_тела href "https://github.com/prozion/anti-aging-education/blob/main/pages/Реальная_структура_твердого_тела.md" _blank
   click Репродуктивная_биология href "https://github.com/prozion/anti-aging-education/blob/main/pages/Репродуктивная_биология.md" _blank
   click Рибосомы_и_биосинтез_белка href "https://github.com/prozion/anti-aging-education/blob/main/pages/Рибосомы_и_биосинтез_белка.md" _blank
@@ -265,6 +291,7 @@ flowchart LR
   click Структура_и_функции_митохондрий href "https://github.com/prozion/anti-aging-education/blob/main/pages/Структура_и_функции_митохондрий.md" _blank
   click Структура_и_функции_пептидов_и_белков href "https://github.com/prozion/anti-aging-education/blob/main/pages/Структура_и_функции_пептидов_и_белков.md" _blank
   click Структурная_биология href "https://github.com/prozion/anti-aging-education/blob/main/pages/Структурная_биология.md" _blank
+  click Супрамолекулярная_химия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Супрамолекулярная_химия.md" _blank
   click Теоретическая_механика href "https://github.com/prozion/anti-aging-education/blob/main/pages/Теоретическая_механика.md" _blank
   click Теоретическая_неорганическая_химия href "https://github.com/prozion/anti-aging-education/blob/main/pages/Теоретическая_неорганическая_химия.md" _blank
   click Теоретическая_физика href "https://github.com/prozion/anti-aging-education/blob/main/pages/Теоретическая_физика.md" _blank
@@ -272,6 +299,7 @@ flowchart LR
   click Теория_поля href "https://github.com/prozion/anti-aging-education/blob/main/pages/Теория_поля.md" _blank
   click Теория_эволюции href "https://github.com/prozion/anti-aging-education/blob/main/pages/Теория_эволюции.md" _blank
   click Теория_экспериментальных_методов href "https://github.com/prozion/anti-aging-education/blob/main/pages/Теория_экспериментальных_методов.md" _blank
+  click Технология_углеродных_материалов href "https://github.com/prozion/anti-aging-education/blob/main/pages/Технология_углеродных_материалов.md" _blank
   click Уравнения_математической_физики href "https://github.com/prozion/anti-aging-education/blob/main/pages/Уравнения_математической_физики.md" _blank
   click Фармакология href "https://github.com/prozion/anti-aging-education/blob/main/pages/Фармакология.md" _blank
   click Физика_белка href "https://github.com/prozion/anti-aging-education/blob/main/pages/Физика_белка.md" _blank
