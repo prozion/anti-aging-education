@@ -295,10 +295,10 @@
 		Биология_Тейлор course:Общая_биология type:textbook author:Тейлор_Д,Грин_Н vols:3 recommended-by:Янов_А
 		Биология_Campbell_Урри course:Общая_биология type:textbook author:Урри_ЛА vols:3 recommended-by:Янов_А d:"1 том на русском, 2-3 том только на английском"
 		Бионеорганическая_химия_Милаева course:Бионеорганическая_химия type:video author:Милаева_ЕР fac:МГУ_Химфак lectures:7 hours:9 mins:30 url:https://teach-in.ru/course/bioneorganch yt:https://youtube.com/playlist?list=PLcsjsqLLSfNDOQFu5FLvE3rOF7elegEJb
-		Биоорганическая_химия_I_Зык course:Биохимия type:video author:Зык_НВ fac:МГУ_Химфак lectures:19 hours:23 url:https://teach-in.ru/course/bioorganic-chemistry-p2 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNCbic22WnhfoL7k_xlmLur8
-		Биоорганическая_химия_II_Зык course:Биохимия type:video author:Зык_НВ fac:МГУ_Химфак lectures:10 hours:12 mins:30 url:https://teach-in.ru/course/bioorganic-chemistry-2 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfND2es6QmFfBbLoIeNzdpFWx
-		Биофизика_I_Рубин course:Биофизика type:video author:Рубин_АБ fac:МГУ_Биофак lectures:13 hours:18 url:https://teach-in.ru/course/biophysics-rubin-part-1
-		Биофизика_II_Рубин course:Биофизика type:video author:Рубин_АБ fac:МГУ_Биофак lectures:9 hours:13 url:https://teach-in.ru/course/biophysics-rubin-part-2
+		Биоорганическая_химия__Зык course:Биохимия type:video author:Зык_НВ fac:МГУ_Химфак lectures:19 hours:23 url:https://teach-in.ru/course/bioorganic-chemistry-p2 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNCbic22WnhfoL7k_xlmLur8
+		Биоорганическая_химия_2_Зык course:Биохимия type:video author:Зык_НВ fac:МГУ_Химфак lectures:10 hours:12 mins:30 url:https://teach-in.ru/course/bioorganic-chemistry-2 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfND2es6QmFfBbLoIeNzdpFWx
+		Биофизика_1_Рубин course:Биофизика type:video author:Рубин_АБ fac:МГУ_Биофак lectures:13 hours:18 url:https://teach-in.ru/course/biophysics-rubin-part-1
+		Биофизика_2_Рубин course:Биофизика type:video author:Рубин_АБ fac:МГУ_Биофак lectures:9 hours:13 url:https://teach-in.ru/course/biophysics-rubin-part-2
 		Биохимия_Асеев course:Биохимия type:video author:Асеев_ВВ fac:МГУ_Биофак lectures:9 hours:13 url:https://teach-in.ru/course/biochemistry-aseev-part2
 		Биохимия_Гладилин course:Биохимия type:video author:Гладилин_АК fac:МГУ_Химфак lectures:25 hours:29 url:https://teach-in.ru/course/biochemistry yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNAr3oCbu46cYVR_cGOY0tI1
 		Биохимия_для_чайников_Мур course:Биохимия author:Мур_Д type:textbook recommended-by:Янов_А
@@ -320,7 +320,7 @@
 ; Д	
 		Дифференциальные_уравнения_Гайер course:Дифференциальные_уравнения type:video author:Гайер_АВ fac:МГУ_Entangled lectures:4 hours:5 url:https://teach-in.ru/course/entagled-diffury
 ; З
-		Задачи_по_физической_химии_Еремин course:Неорганическая_химия author:Еремин_ВВ,Карпов_СИ,Кузьменко_НЕ type:taskbook year:2000 url:http://chem.msu.su/rus/teaching/eremin1/welcome.html recommended-by:Неорганическая_химия_I_Гудилин
+		Задачи_по_физической_химии_Еремин course:Неорганическая_химия author:Еремин_ВВ,Карпов_СИ,Кузьменко_НЕ type:taskbook year:2000 url:http://chem.msu.su/rus/teaching/eremin1/welcome.html recommended-by:Неорганическая_химия_1_Гудилин
 ; И		
 		Иммунология_Недоспасов course:Иммунология type:video author:Недоспасов_СА fac:МГУ_Биофак lectures:10 hours:14 url:https://teach-in.ru/course/immunology
 		Инженерная_энзимология_и_аналитическая_биотехнология_Курочкин course:Энзимология type:video author:Курочкин_ИН fac:МГУ_Химфак lectures:4 hours:4 url:https://teach-in.ru/course/ensimanalbio yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNBvR2qhdwSzzb6hlnNaJLD8
@@ -333,10 +333,10 @@
 		Клетки_по_Льюину_Кребс course:Цитология type:textbook author:Кребс_Д year:2018 pages:1059 url:https://disk.yandex.ru/i/lrYwUqfGwpo7Zw
 		Коллоидная_химия_Матвеенко course:Коллоидная_химия type:video author:Матвеенко_ВН fac:МГУ_Химфак lectures:13 hours:16 url:https://teach-in.ru/course/colloid-chemistry yt:https://youtube.com/playlist?list=PLcsjsqLLSfNAd4b73wlX17SlcinepJNUN
 		Кристаллохимия_Словохотов course:Кристаллохимия type:video author:Словохотов_ЮЛ fac:МГУ_Химфак lectures:15 hours:22 url:https://teach-in.ru/course/crystal-chemistry yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNA3iLw1oaNj1jiiYRihbqvZ
-		Кристаллохимия_I_Еремин course:Кристаллохимия type:video author:Еремин_НН fac:МГУ_Химфак lectures:9 hours:11 url:https://teach-in.ru/course/crystal-chemistry-eremin
-		Кристаллохимия_II_Еремин course:Кристаллохимия type:video author:Еремин_НН fac:МГУ_Химфак lectures:13 hours:16 url:https://teach-in.ru/course/crystal-chemistry-p2-eremin yt:https://youtube.com/playlist?list=PLcsjsqLLSfNC6eYXYeCI0yW3jfKExqCNk
+		Кристаллохимия_1_Еремин course:Кристаллохимия type:video author:Еремин_НН fac:МГУ_Химфак lectures:9 hours:11 url:https://teach-in.ru/course/crystal-chemistry-eremin
+		Кристаллохимия_2_Еремин course:Кристаллохимия type:video author:Еремин_НН fac:МГУ_Химфак lectures:13 hours:16 url:https://teach-in.ru/course/crystal-chemistry-p2-eremin yt:https://youtube.com/playlist?list=PLcsjsqLLSfNC6eYXYeCI0yW3jfKExqCNk
 		Культура_животных_клеток_Фрешни course:Методы_клеточной_биологии type:textbook author:Фрешни_Р recommended-by:Янов_А
-		Курс_физической_химии_Киреев course:Неорганическая_химия author:Киреев_ВА type:textbook publisher:Химия year:1975 recommended-by:Неорганическая_химия_I_Гудилин
+		Курс_физической_химии_Киреев course:Неорганическая_химия author:Киреев_ВА type:textbook publisher:Химия year:1975 recommended-by:Неорганическая_химия_1_Гудилин
 ; Л	
 		Лекция_по_эпигенетике_Янов course:Эпигенетика type:video author:Янов_А fac:OpenLongevity lectures:1 hours:2 url:https://www.youtube.com/watch?v=mwItQXwdIMI
 		Линейная_алгебра_Шишкин course:Линейная_алгебра type:video author:Шишкин_АА fac:МГУ_Физфак lectures:10 hours:14 url:https://teach-in.ru/course/linear-algebra-shishkin
@@ -352,37 +352,37 @@
 		Молекулярная_биология_Скоблов course:Молекулярная_биология type:slides author:Скоблов_МЮ fac:МФТИ_ФБМФ url:https://mipt.ru/dbmp/student/files/mol_biology/programm.php
 ;	Н
 		Нейронауки_для_чайников_Амтор course:Нейрофизиология type:book author:Амтор_Ф recommended-by:Янов_А
-		Неорганическая_химия_Хьюи course:Неорганическая_химия author:Хьюи_Дж type:textbook publisher:Химия year:1987 recommended-by:Неорганическая_химия_I_Гудилин
-		Неорганическая_химия_I_Гудилин course:Неорганическая_химия type:video author:Гудилин_ЕА,Шевельков_АВ fac:МГУ_Химфак lectures:27 hours:36 url:https://teach-in.ru/course/neorgchem1 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNC6uqQUAP3j08FZIm_frFrP
-		Неорганическая_химия_II_Шевельков course:Неорганическая_химия type:video author:Шевельков_АВ,Гудилин_ЕА fac:МГУ_Химфак lectures:23 hours:32 url:https://teach-in.ru/course/inorganic-chemistry-p2 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNAf2VGoLFdqwE2pwykwZi8H
+		Неорганическая_химия_Хьюи course:Неорганическая_химия author:Хьюи_Дж type:textbook publisher:Химия year:1987 recommended-by:Неорганическая_химия_1_Гудилин
+		Неорганическая_химия_1_Гудилин course:Неорганическая_химия type:video author:Гудилин_ЕА,Шевельков_АВ fac:МГУ_Химфак lectures:27 hours:36 url:https://teach-in.ru/course/neorgchem1 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNC6uqQUAP3j08FZIm_frFrP
+		Неорганическая_химия_2_Шевельков course:Неорганическая_химия type:video author:Шевельков_АВ,Гудилин_ЕА fac:МГУ_Химфак lectures:23 hours:32 url:https://teach-in.ru/course/inorganic-chemistry-p2 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNAf2VGoLFdqwE2pwykwZi8H
 ; О	
 		Общая_биология_Асеев course:Общая_биология type:video author:Асеев_ВВ fac:МГУ_Биофак lectures:13 hours:19 url:https://teach-in.ru/course/biology-aseev-for-physicists yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNDiVZaaNUWI0vEKdKZv5J8U
-		Общая_и_неорганическая_химия_Ахметов course:Неорганическая_химия author:Ахметов_НС type:textbook publisher:Высшая_школа year:1988 recommended-by:Неорганическая_химия_I_Гудилин
+		Общая_и_неорганическая_химия_Ахметов course:Неорганическая_химия author:Ахметов_НС type:textbook publisher:Высшая_школа year:1988 recommended-by:Неорганическая_химия_1_Гудилин
 		Общая_химия_Еремин course:Общая_химия type:video author:Еремин_ВВ fac:МГУ_Физфак lectures:7 hours:9 mins:30 url:https://teach-in.ru/course/Genchem yt:https://teach-in.ru/course/Genchem
-		Органическая_химия_I_Лукашев course:Органическая_химия type:video author:Лукашев_НВ fac:МГУ_Химфак lectures:24 hours:33 mins:30 url:https://teach-in.ru/course/organic-chemistry-p1 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNALYL33eBd-kC4JpfJXMeu7
-		Органическая_химия_II_Лукашев course:Органическая_химия type:video author:Лукашев_НВ fac:МГУ_Химфак lectures:23 hours:30 mins:30 url:https://teach-in.ru/course/organic-chemistry-p2 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNDR6Bv6ZzMiA1ZCWfZqZe9J
-		Органический_синтез_I_Дядченко course:Органический_синтез type:video author:Дядченко_ВП fac:МГУ_Химфак lectures:28 hours:36 url:https://teach-in.ru/course/organic-synthesis-part-1-dyadchenko yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNCkut4Mrh0M3TDaMz42xmA3
-		Органический_синтез_II_Дядченко course:Органический_синтез type:video author:Дядченко_ВП fac:МГУ_Химфак lectures:16 hours:23 url:https://teach-in.ru/course/organic-synthesis-part-2-dyadchenk yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNB2kdA3bUJ1S2rVzX6Z6ekU
+		Органическая_химия_1_Лукашев course:Органическая_химия type:video author:Лукашев_НВ fac:МГУ_Химфак lectures:24 hours:33 mins:30 url:https://teach-in.ru/course/organic-chemistry-p1 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNALYL33eBd-kC4JpfJXMeu7
+		Органическая_химия_2_Лукашев course:Органическая_химия type:video author:Лукашев_НВ fac:МГУ_Химфак lectures:23 hours:30 mins:30 url:https://teach-in.ru/course/organic-chemistry-p2 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNDR6Bv6ZzMiA1ZCWfZqZe9J
+		Органический_синтез_1_Дядченко course:Органический_синтез type:video author:Дядченко_ВП fac:МГУ_Химфак lectures:28 hours:36 url:https://teach-in.ru/course/organic-synthesis-part-1-dyadchenko yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNCkut4Mrh0M3TDaMz42xmA3
+		Органический_синтез_2_Дядченко course:Органический_синтез type:video author:Дядченко_ВП fac:МГУ_Химфак lectures:16 hours:23 url:https://teach-in.ru/course/organic-synthesis-part-2-dyadchenk yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNB2kdA3bUJ1S2rVzX6Z6ekU
 		Основные_законы_химии_1_Дикерсон course:Общая_химия publisher:Мир year:1982 type:textbook volume:1 author:Дикерсон_Р,Грей_Х,Хейт_Г url:https://disk.yandex.ru/i/W792ZyVDZ6MnwA
 		Основы_биологии_клетки_Окштейн course:Цитология,Общая_биология type:video author:Окштейн_ИЛ fac:МФТИ_ФМХФ lectures:27 hours:14 url:http://j90428as.beget.tech/course/Biology-Basics-14L/lectures yt:https://www.youtube.com/playlist?list=PLwg7NW3ZH-fX2HGMrhXNvQjJtwpE9ORTz
 		Основы_генетики_Клаг course:Генетика type:textbook author:Клаг_У
 		Основы_нанохимии_и_нанотехнологий_Лебедев course:Нанохимия_и_нанотехнологии type:video author:Лебедев_А fac:ЯрГУ_Физфак lectures:35 hours:27 url:https://www.youtube.com/playlist?list=PL_oqxSpsa5FcnKHi80yMcqhW_x8R-3heZ
 		Основы_радиохимии_Калмыков course:Радиохимия type:video author:Калмыков_СН fac:МГУ_Химфак lectures:13 hours:17 mins:30 url:https://teach-in.ru/course/fundamentals-of-radiochemistry yt:https://youtube.com/playlist?list=PLcsjsqLLSfNBbm20Elsbz0Vz3jCaDiGGj
-		Основы_химической_термодинамики_Еремин course:Неорганическая_химия author:Еремин_ЕН type:textbook publisher:Высшая_школа year:1974 recommended-by:Неорганическая_химия_I_Гудилин
+		Основы_химической_термодинамики_Еремин course:Неорганическая_химия author:Еремин_ЕН type:textbook publisher:Высшая_школа year:1974 recommended-by:Неорганическая_химия_1_Гудилин
 		Основы_языка_Python_Hexlet course:Язык_Python type:mooc author:Hexlet hours:56 url:https://ru.hexlet.io/courses/python-basics
 ;	С
 		Строение_молекул_Новаковская course:Строение_молекул type:video author:Новаковская_ЮВ fac:МГУ_Химфак lectures:16 hours:24 url:https://teach-in.ru/course/molecular-structure yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNDGxeTHfnkCcYUHJGsePP5G
 ; Т		
 		Теоретическая_механика_Форш course:Теоретическая_механика type:video author:Форш_ПА fac:МГУ_Химфак lectures:15 hours:21 url:https://teach-in.ru/course/theoretical-mechanics yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNB-O0AhtSPVpiyPJu-_WwSv		
-		Теоретическая_неорганическая_химия_I_Леменовский course:Теоретическая_неорганическая_химия type:video author:Леменовский_ДА fac:МГУ_Химфак lectures:13 hours:17 url:https://teach-in.ru/course/theornotorg1 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNBWv5gqr1IUey0CcCBMhKIw
-		Теоретическая_неорганическая_химия_II_Леменовский course:Теоретическая_неорганическая_химия type:video author:Леменовский_ДА fac:МГУ_Химфак lectures:13 hours:15 url:https://teach-in.ru/course/theornotorg2 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNCqp4S4Wm0197Us3XeBnRsl
-		Термодинамические_аспекты_неорганической_химии_Джонсон course:Неорганическая_химия author:Джонсон_Д type:textbook publisher:Мир year:1985 recommended-by:Неорганическая_химия_I_Гудилин
+		Теоретическая_неорганическая_химия_1_Леменовский course:Теоретическая_неорганическая_химия type:video author:Леменовский_ДА fac:МГУ_Химфак lectures:13 hours:17 url:https://teach-in.ru/course/theornotorg1 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNBWv5gqr1IUey0CcCBMhKIw
+		Теоретическая_неорганическая_химия_2_Леменовский course:Теоретическая_неорганическая_химия type:video author:Леменовский_ДА fac:МГУ_Химфак lectures:13 hours:15 url:https://teach-in.ru/course/theornotorg2 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNCqp4S4Wm0197Us3XeBnRsl
+		Термодинамические_аспекты_неорганической_химии_Джонсон course:Неорганическая_химия author:Джонсон_Д type:textbook publisher:Мир year:1985 recommended-by:Неорганическая_химия_1_Гудилин
 ;	Ф	
-		Физико-химические_основы_неорганической_химии_Полторак course:Неорганическая_химия author:Полторак_ОМ,Ковба_ЛМ type:textbook publisher:МГУ year:1984 recommended-by:Неорганическая_химия_I_Гудилин
+		Физико-химические_основы_неорганической_химии_Полторак course:Неорганическая_химия author:Полторак_ОМ,Ковба_ЛМ type:textbook publisher:МГУ year:1984 recommended-by:Неорганическая_химия_1_Гудилин
 		Физиология_висцеральных_систем_Тятенкова course:Физиология_висцеральных_систем type:textbook pages:74 author:Тятенкова_НН url:http://www.lib.uniyar.ac.ru/edocs/iuni/20100396.pdf?ysclid=l7ax8v49d681982952
 		Физиология_сенсорных_систем_и_высшей_нервной_деятельности_Мышкин course:Физиология_высшей_нервной_деятельности type:textbook pages:168 author:Мышкин_ИЮ url:http://www.lib.uniyar.ac.ru/edocs/iuni/20080308.pdf
-		Физическая_химия_I_Коробов course:Физическая_химия type:video author:Коробов_МВ fac:МГУ_Химфак lectures:25 hours:35 url:https://teach-in.ru/course/physical-chemistry-part-1 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNDs6zqdpUhHfRh4xbEMIoLD
-		Физическая_химия_II_Коробов course:Физическая_химия type:video author:Коробов_МВ fac:МГУ_Химфак lectures:20 hours:27 url:https://teach-in.ru/course/physical-chemistry-p2 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNBrBhaaco12BK7VktmAT9hK
+		Физическая_химия_1_Коробов course:Физическая_химия type:video author:Коробов_МВ fac:МГУ_Химфак lectures:25 hours:35 url:https://teach-in.ru/course/physical-chemistry-part-1 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNDs6zqdpUhHfRh4xbEMIoLD
+		Физическая_химия_2_Коробов course:Физическая_химия type:video author:Коробов_МВ fac:МГУ_Химфак lectures:20 hours:27 url:https://teach-in.ru/course/physical-chemistry-p2 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNBrBhaaco12BK7VktmAT9hK
 		Физические_методы_биохимии_Савицкий course:Методы_клеточной_биологии type:video author:Савицкий_АП fac:МГУ_Химфак lectures:12 hours:17 url:https://teach-in.ru/course/biochemistry-savitskiy yt:https://youtube.com/playlist?list=PLcsjsqLLSfNC1q-Si3M9iInjN-Dp6u9DK
 ;	Х	
 		Химическая_термодинамика_и_кинетика_Успенская course:Химическая_термодинамика type:video author:Успенская_ИА fac:МГУ_Химфак lectures:20 hours:25 url:https://teach-in.ru/course/chemical-thermodynamics yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfND055iOW8nmyYnBVtNXMOIr
