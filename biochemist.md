@@ -19,6 +19,9 @@ flowchart LR
   Математический_анализ[Математический анализ]:::href
   Неорганическая_химия[Неорганическая химия]:::href
   Линейная_алгебра[Линейная алгебра]:::href
+  Язык_R[Язык R]:::href
+  Язык_SQL[Язык SQL]:::href
+  Язык_Python[Язык Python]:::href
   Теоретическая_неорганическая_химия[Теоретическая неорганическая химия]:::href
   end
 
@@ -57,8 +60,6 @@ flowchart LR
 
   subgraph year5 [5 курс]
   Язык_программирования_С++[C++]:::href
-  Язык_R[Язык R]:::href
-  Язык_SQL[Язык SQL]:::href
   end
 
   subgraph year6 [6 курс]
@@ -72,6 +73,7 @@ flowchart LR
   Компьютерный_инструментарий -.-> Язык_программирования_С++
   Компьютерный_инструментарий -.-> Язык_R
   Компьютерный_инструментарий -.-> Язык_SQL
+  Компьютерный_инструментарий -.-> Язык_Python
   Теоретическая_механика -.-> Теория_поля
   Теоретическая_механика -.-> Физическая_химия
   Теоретическая_механика -.-> Квантовая_механика
@@ -361,8 +363,10 @@ flowchart LR
   click Эпигенетика href "https://github.com/prozion/anti-aging-education/blob/main/pages/Эпигенетика.md" _blank
   click Эукариотическая_РНК href "https://github.com/prozion/anti-aging-education/blob/main/pages/Эукариотическая_РНК.md" _blank
   click Язык_программирования_С++ href "https://github.com/prozion/anti-aging-education/blob/main/pages/Язык_программирования_С++.md" _blank
+  click Язык_Python href "https://github.com/prozion/anti-aging-education/blob/main/pages/Язык_Python.md" _blank
   click Язык_R href "https://github.com/prozion/anti-aging-education/blob/main/pages/Язык_R.md" _blank
   click Язык_SQL href "https://github.com/prozion/anti-aging-education/blob/main/pages/Язык_SQL.md" _blank
+  click NoSQL_базы_данных href "https://github.com/prozion/anti-aging-education/blob/main/pages/NoSQL_базы_данных.md" _blank
 ```
 
 Возможен и другой подход, когда обучение начинается сразу с центрального предмета. В нашем случае это биохимия. Если в ходе обучения встречаются непонятные моменты, то можно разобрать и понять их, переключившись на предмет, лежащий в основе непонятной темы. Это может быть квантовая химия, если непонятно как работает химическая связь, или молекулярная биология, если не ясен биологический смысл той или иной функции молекулы. Далее, если не хватает понимания устрйоства клетки и процессов в ней происходящих, на помощь может прийти цитология. И так далее. Подробнее смотрите на диаграмме.

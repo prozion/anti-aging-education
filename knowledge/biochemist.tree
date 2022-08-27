@@ -251,8 +251,10 @@
 		Эпигенетика
 		Эукариотическая_РНК МГУ_ФББ:5 year:5
 		Язык_программирования_С++ label:C++ МГУ_ФББ:5 year:5
-		Язык_R МГУ_ФББ:5 year:5
-		Язык_SQL МГУ_ФББ:5 year:5
+		Язык_Python Hexlet:1 year:1
+		Язык_R МГУ_ФББ:5 year:1
+		Язык_SQL МГУ_ФББ:5 year:1
+		NoSQL_базы_данных
 	зависимости
 		Аналитическая_химия to:Аналитическая_биохимия
 		Анатомия to:Физиология,Гистология,Цитология,Эмбриология
@@ -261,7 +263,7 @@
 		Информатика to:Биоинформатика,Компьютерный_инструментарий
 		Квантовая_механика to:Квантовая_химия
 		Квантовая_химия to:Строение_молекул
-		Компьютерный_инструментарий to:Язык_программирования_С++,Язык_R,Язык_SQL
+		Компьютерный_инструментарий to:Язык_программирования_С++,Язык_R,Язык_SQL,Язык_Python
 		Кристаллохимия to:Реальная_структура_твердого_тела
 		Линейная_алгебра to:Теория_вероятностей
 		Математическая_статистика to:Статистическая_физика
@@ -301,8 +303,8 @@
 
 ; В
 		Введение_в_биоорганическую_химию_Шноль course:Биохимия type:video author:Шноль_СЭ fac:МГУ_Химфак lectures:8 hours:11 url:https://teach-in.ru/course/bioorganic-chemistry yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNAxcnQljyEH4AxVyMRBqJq_ d:"Фактически, лекции по истории биохимии"
-		Введение_в_программирование_Hexlet course:Основы_Computer_Science type:mooc author:Hexlet hours:24 url:https://ru.hexlet.io/courses/introduction_to_programming
-		Введение_в_Git_Hexlet course:Основы_Computer_Science type:mooc author:Hexlet hours:18 lessons:16 url:https://ru.hexlet.io/courses/intro_to_git
+		Введение_в_программирование_Hexlet course:Информатика type:mooc author:Hexlet hours:24 url:https://ru.hexlet.io/courses/introduction_to_programming
+		Введение_в_Git_Hexlet course:Компьютерный_инструментарий type:mooc author:Hexlet hours:18 lessons:16 url:https://ru.hexlet.io/courses/intro_to_git
 		Вирусология_Карпова course:Вирусология type:video author:Карпова_ОВ fac:МГУ_Биофак lectures:10 hours:14 url:https://teach-in.ru/course/virology
 		Вирусология_Пиневич course:Вирусология type:textbook author:Пиневич_АВ recommended-by:Янов_А
 		Внеклеточные_нуклеиновые_кислоты_Зверева course:Биохимия type:video author:Зверева_МЭ fac:МГУ_Химфак url:https://teach-in.ru/course/chemical-carcinogenesis-zvereva lectures:5 hours:6
@@ -320,7 +322,7 @@
 ; И		
 		Иммунология_Недоспасов course:Иммунология type:video author:Недоспасов_СА fac:МГУ_Биофак lectures:10 hours:14 url:https://teach-in.ru/course/immunology
 		Инженерная_энзимология_и_аналитическая_биотехнология_Курочкин course:Энзимология type:video author:Курочкин_ИН fac:МГУ_Химфак lectures:4 hours:4 url:https://teach-in.ru/course/ensimanalbio yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNBvR2qhdwSzzb6hlnNaJLD8
-		Информатика_Миронов course:Основы_Computer_Science type:video author:Миронов_АА fac:МГУ_ФББ lectures:16 hours:21 url:https://teach-in.ru/course/informatics yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNDR0FUWJZIy8BgE1YUAhDXT
+		Информатика_Миронов course:Информатика type:video author:Миронов_АА fac:МГУ_ФББ lectures:16 hours:21 url:https://teach-in.ru/course/informatics yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNDR0FUWJZIy8BgE1YUAhDXT
 		Искусственный_интеллект_в_химии_и_материаловедении_Королев course:Искусственный_интелект_в_химии type:video author:Королев_ВВ fac:МГУ_Химфак lectures:17 hours:18 url:https://teach-in.ru/course/ai-in-chemistry-and-materials-science yt:https://youtube.com/playlist?list=PLcsjsqLLSfNDwQTmmSLwoD3TQiihaj3BO
 		Использование_рентгеновских_лазеров_для_изучения_структуры_биообъектов_Шайтан course:Методы_клеточной_биологии type:video author:Шайтан_КВ fac:МГУ_Биофак lectures:1 hours:0 mins:45 url:https://teach-in.ru/course/scientific-report-biology
 ; К	
@@ -365,7 +367,7 @@
 		Основы_нанохимии_и_нанотехнологий_Лебедев course:Нанохимия_и_нанотехнологии type:video author:Лебедев_А fac:ЯрГУ_Физфак lectures:35 hours:27 url:https://www.youtube.com/playlist?list=PL_oqxSpsa5FcnKHi80yMcqhW_x8R-3heZ
 		Основы_радиохимии_Калмыков course:Радиохимия type:video author:Калмыков_СН fac:МГУ_Химфак lectures:13 hours:17 mins:30 url:https://teach-in.ru/course/fundamentals-of-radiochemistry yt:https://youtube.com/playlist?list=PLcsjsqLLSfNBbm20Elsbz0Vz3jCaDiGGj
 		Основы_химической_термодинамики_Еремин course:Неорганическая_химия author:Еремин_ЕН type:textbook publisher:Высшая_школа year:1974 recommended-by:Неорганическая_химия_I_Гудилин
-		Основы_языка_Python_Hexlet course:Основы_Computer_Science type:mooc author:Hexlet hours:56 url:https://ru.hexlet.io/courses/python-basics
+		Основы_языка_Python_Hexlet course:Язык_Python type:mooc author:Hexlet hours:56 url:https://ru.hexlet.io/courses/python-basics
 ;	С
 		Строение_молекул_Новаковская course:Строение_молекул type:video author:Новаковская_ЮВ fac:МГУ_Химфак lectures:16 hours:24 url:https://teach-in.ru/course/molecular-structure yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNDGxeTHfnkCcYUHJGsePP5G
 ; Т		
