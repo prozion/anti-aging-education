@@ -307,6 +307,8 @@
 
 ; В
 		Введение_в_биоорганическую_химию_Шноль course:Биохимия type:video author:Шноль_СЭ fac:МГУ_Химфак lectures:8 hours:11 url:https://teach-in.ru/course/bioorganic-chemistry yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNAxcnQljyEH4AxVyMRBqJq_ d:"Фактически, лекции по истории биохимии"
+		Введение_в_квантовую_физику_Авакянц course:Квантовая_физика type:video author:Авакянц_ЛП fac:МГУ_Физфак lectures:15 hours:21 url:https://www.youtube.com/playlist?list=PLcsjsqLLSfNDAU_IXe0w1Kf2w9wbtEFR8
+		Введение_в_квантовую_физику course:Квантовая_физика type:mooc author:Глазков_ВН fac:МФТИ_КОФ weeks:12 url:https://openedu.ru/course/mipt/QNTPHYS/?ysclid=l7c0ra0r5n971848290
 		Введение_в_программирование_Hexlet course:Информатика type:mooc author:Hexlet hours:24 url:https://ru.hexlet.io/courses/introduction_to_programming
 		Введение_в_Git_Hexlet course:Компьютерный_инструментарий type:mooc author:Hexlet hours:18 lessons:16 url:https://ru.hexlet.io/courses/intro_to_git
 		Вирусология_Карпова course:Вирусология type:video author:Карпова_ОВ fac:МГУ_Биофак lectures:10 hours:14 url:https://teach-in.ru/course/virology
@@ -320,6 +322,7 @@
 		Геронтология_Фенюк course:Геронтология type:video author:Фенюк_БА fac:МГУ_ФББ lectures:10 hours:13 url:https://teach-in.ru/course/gerontology yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNAsNTlgoIkFccdyf_0Ehq-w
 		Графы_знаний_Галкин course:Инженерия_знаний type:video author:Галкин_МЛ fac:ИТМО_ФПИКТ lectures:11 hours:12 url:https://www.youtube.com/playlist?list=PLlmfdv64-P33ROIzuATAWEp0V1jMXAoj_
 ; Д	
+		Дискретная_математика_Гашков course:Дискретная_математика type:video author:Гашков_СБ fac:МГУ_Мехмат lectures:12 hours:16 mins:30 url:https://www.youtube.com/playlist?list=PLcsjsqLLSfNB4FV5u3yd_b0K7yX_mfVJ3
 		Дифференциальные_уравнения_Гайер course:Дифференциальные_уравнения type:video author:Гайер_АВ fac:МГУ_Entangled lectures:4 hours:5 url:https://teach-in.ru/course/entagled-diffury
 ; З
 		Задачи_по_физической_химии_Еремин course:Неорганическая_химия author:Еремин_ВВ,Карпов_СИ,Кузьменко_НЕ type:taskbook year:2000 url:http://chem.msu.su/rus/teaching/eremin1/welcome.html recommended-by:Неорганическая_химия_1_Гудилин
@@ -330,12 +333,12 @@
 		Искусственный_интеллект_в_химии_и_материаловедении_Королев course:Искусственный_интелект_в_химии type:video author:Королев_ВВ fac:МГУ_Химфак lectures:17 hours:18 url:https://teach-in.ru/course/ai-in-chemistry-and-materials-science yt:https://youtube.com/playlist?list=PLcsjsqLLSfNDwQTmmSLwoD3TQiihaj3BO
 		Использование_рентгеновских_лазеров_для_изучения_структуры_биообъектов_Шайтан course:Методы_клеточной_биологии type:video author:Шайтан_КВ fac:МГУ_Биофак lectures:1 hours:0 mins:45 url:https://teach-in.ru/course/scientific-report-biology
 ; К	
-		Введение_в_квантовую_физику_Авакянц course:Квантовая_физика type:video author:Авакянц_ЛП fac:МГУ_Физфак lectures:15 hours:21 url:https://www.youtube.com/playlist?list=PLcsjsqLLSfNDAU_IXe0w1Kf2w9wbtEFR8
-		Введение_в_квантовую_физику course:Квантовая_физика type:mooc author:Глазков_ВН fac:МФТИ_КОФ weeks:12 url:https://openedu.ru/course/mipt/QNTPHYS/?ysclid=l7c0ra0r5n971848290
 		Квантовая_химия_Новаковская course:Квантовая_химия type:video author:Новаковская_ЮВ fac:МГУ_Химфак lectures:13 hours:19 url:https://teach-in.ru/course/quantum-chemistry yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNAXa-EZeVmFijBKZ4rG7-ck
 		Квантовая_химия_Степанов course:Квантовая_химия type:video author:Степанов_НФ fac:МГУ_Химфак lectures:13 hours:15 url:https://teach-in.ru/course/quantum-chemistry-stepanov yt:https://youtube.com/playlist?list=PLcsjsqLLSfNACQCU86CGYHXGsEoJVMTJC
 		Клетки_по_Льюину_Кребс course:Цитология type:textbook author:Кребс_Д year:2018 pages:1059 url:https://disk.yandex.ru/i/lrYwUqfGwpo7Zw
 		Коллоидная_химия_Матвеенко course:Коллоидная_химия type:video author:Матвеенко_ВН fac:МГУ_Химфак lectures:13 hours:16 url:https://teach-in.ru/course/colloid-chemistry yt:https://youtube.com/playlist?list=PLcsjsqLLSfNAd4b73wlX17SlcinepJNUN
+		Комбинаторика_Виленкин course:Комбинаторика type:taskbook author:Виленкин_НЯ year:1969 publisher:Наука url:https://disk.yandex.ru/i/V7Qe8qtcsPLosA
+		Комбинаторика_Райгородский course:Комбинаторика type:video author:Райгородский_АМ fac:МГУ_ФББ lectures:15 hours:20 url:https://www.youtube.com/playlist?list=PLcsjsqLLSfNB6z1El69o8KutJu-LfgZJE
 		Кристаллохимия_Словохотов course:Кристаллохимия type:video author:Словохотов_ЮЛ fac:МГУ_Химфак lectures:15 hours:22 url:https://teach-in.ru/course/crystal-chemistry yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNA3iLw1oaNj1jiiYRihbqvZ
 		Кристаллохимия_1_Еремин course:Кристаллохимия type:video author:Еремин_НН fac:МГУ_Химфак lectures:9 hours:11 url:https://teach-in.ru/course/crystal-chemistry-eremin
 		Кристаллохимия_2_Еремин course:Кристаллохимия type:video author:Еремин_НН fac:МГУ_Химфак lectures:13 hours:16 url:https://teach-in.ru/course/crystal-chemistry-p2-eremin yt:https://youtube.com/playlist?list=PLcsjsqLLSfNC6eYXYeCI0yW3jfKExqCNk
@@ -345,6 +348,7 @@
 		Лекция_по_эпигенетике_Янов course:Эпигенетика type:video author:Янов_А fac:OpenLongevity lectures:1 hours:2 url:https://www.youtube.com/watch?v=mwItQXwdIMI
 		Линейная_алгебра_Шишкин course:Линейная_алгебра type:video author:Шишкин_АА fac:МГУ_Физфак lectures:10 hours:14 url:https://teach-in.ru/course/linear-algebra-shishkin
 ; М		
+		Математическая_статистика_Шабанов course:Математическая_статистика type:video author:Шабанов_ДА fac:МГУ_Мехмат lectures:20 hours:22 mins:30 url:https://www.youtube.com/playlist?list=PLcsjsqLLSfNAxlEJkYk011en80OKz7Gym
 		Машинное_обучение_Воронцов course:Машинное_обучение type:video author:Воронцов_КВ fac:Яндекс_ШАД lectures:22 hours:28 url:https://www.youtube.com/playlist?list=PLJOzdkh8T5krxc4HsHbB8g8f0hu7973fK
 		Машинное_обучение_в_биологии_Пензар course:Машинное_обучение type:video author:Пензар_ДД fac:МГУ_ФББ lectures:14 hours:18 url:https://teach-in.ru/course/machine-learning-in-biology
 		Машинное_обучение_в_структурной_биологии_Головин course:Машинное_обучение type:video author:Головин_АВ fac:МГУ_ФББ lectures:7 hours:10 url:https://teach-in.ru/course/machine-learning-in-structural-biology yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfND6VrwJ_XVkuJnwPZRCKn97
@@ -401,6 +405,9 @@
 		Химия_для_чайников_Мур course:Общая_химия type:book author:Мур_Д
 		Химия_8-11_класс_Габриелян course:Общая_химия type:textbook author:Габриелян_ОС
 		Химия_8-11_класс_Рудзитис course:Общая_химия type:textbook author:Рудзитис_ГЕ
+; Ч
+		Численные_методы_Кобельков course:Численные_методы type:video author:Кобельков_ГМ fac:МГУ_Мехмат lectures:16 hours:22 url:https://www.youtube.com/playlist?list=PLcsjsqLLSfNDlbxfwVSjqtqtBMeK2zQhV
+		Численные_методы_семинары_Кобельков course:Численные_методы type:video author:Кобельков_ГМ fac:МГУ_Мехмат lectures:6 hours:6 mins:30 url:https://www.youtube.com/playlist?list=PLcsjsqLLSfNACeOQik57eVOvjTMSMePh8
 ; Э
 		Эмбриология_Голиченков course:Эмбриология type:video author:Голиченков_ВА fac:МГУ_Биофак lectures:10 hours:11 url:https://teach-in.ru/course/embryology-golychenkov
 		Эпигенетика_Эллис course:Эпигенетика type:textbook author:Эллис_СД
