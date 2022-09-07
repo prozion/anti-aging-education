@@ -345,6 +345,7 @@
 		Лекция_по_эпигенетике_Янов course:Эпигенетика type:video author:Янов_А fac:OpenLongevity lectures:1 hours:2 url:https://www.youtube.com/watch?v=mwItQXwdIMI
 		Линейная_алгебра_Шишкин course:Линейная_алгебра type:video author:Шишкин_АА fac:МГУ_Физфак lectures:10 hours:14 url:https://teach-in.ru/course/linear-algebra-shishkin
 ; М		
+		Машинное_обучение_Воронцов course:Машинное_обучение type:video author:Воронцов_КВ fac:Яндекс_ШАД lectures:22 hours:30 url:https://www.youtube.com/playlist?list=PLJOzdkh8T5krxc4HsHbB8g8f0hu7973fK
 		Машинное_обучение_в_биологии_Пензар course:Машинное_обучение type:video author:Пензар_ДД fac:МГУ_ФББ lectures:14 hours:18 url:https://teach-in.ru/course/machine-learning-in-biology
 		Машинное_обучение_в_структурной_биологии_Головин course:Машинное_обучение type:video author:Головин_АВ fac:МГУ_ФББ lectures:7 hours:10 url:https://teach-in.ru/course/machine-learning-in-structural-biology yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfND6VrwJ_XVkuJnwPZRCKn97
 		Методы_исследования_единичных_биомолекул_Фенюк course:Методы_клеточной_биологии type:video author:Фенюк_БА fac:МГУ_ФББ lectures:8 hours:11 url:https://teach-in.ru/course/research-methods-for-single-biomolecules
