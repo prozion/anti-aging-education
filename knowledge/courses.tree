@@ -345,7 +345,7 @@
 		Лекция_по_эпигенетике_Янов course:Эпигенетика type:video author:Янов_А fac:OpenLongevity lectures:1 hours:2 url:https://www.youtube.com/watch?v=mwItQXwdIMI
 		Линейная_алгебра_Шишкин course:Линейная_алгебра type:video author:Шишкин_АА fac:МГУ_Физфак lectures:10 hours:14 url:https://teach-in.ru/course/linear-algebra-shishkin
 ; М		
-		Машинное_обучение_Воронцов course:Машинное_обучение type:video author:Воронцов_КВ fac:Яндекс_ШАД lectures:22 hours:30 url:https://www.youtube.com/playlist?list=PLJOzdkh8T5krxc4HsHbB8g8f0hu7973fK
+		Машинное_обучение_Воронцов course:Машинное_обучение type:video author:Воронцов_КВ fac:Яндекс_ШАД lectures:22 hours:28 url:https://www.youtube.com/playlist?list=PLJOzdkh8T5krxc4HsHbB8g8f0hu7973fK
 		Машинное_обучение_в_биологии_Пензар course:Машинное_обучение type:video author:Пензар_ДД fac:МГУ_ФББ lectures:14 hours:18 url:https://teach-in.ru/course/machine-learning-in-biology
 		Машинное_обучение_в_структурной_биологии_Головин course:Машинное_обучение type:video author:Головин_АВ fac:МГУ_ФББ lectures:7 hours:10 url:https://teach-in.ru/course/machine-learning-in-structural-biology yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfND6VrwJ_XVkuJnwPZRCKn97
 		Методы_исследования_единичных_биомолекул_Фенюк course:Методы_клеточной_биологии type:video author:Фенюк_БА fac:МГУ_ФББ lectures:8 hours:11 url:https://teach-in.ru/course/research-methods-for-single-biomolecules
@@ -379,6 +379,10 @@
 ;	С
 		Строение_молекул_Новаковская course:Строение_молекул type:video author:Новаковская_ЮВ fac:МГУ_Химфак lectures:16 hours:24 url:https://teach-in.ru/course/molecular-structure yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNDGxeTHfnkCcYUHJGsePP5G
 ; Т		
+		Теория_вероятности_и_математическая_статистика_для_геологов_Соколов course:Теория_вероятностей type:video author:Соколов_ДД fac:МГУ_Геолфак lectures:12 hours:16 mins:30 url:https://www.youtube.com/playlist?list=PLcsjsqLLSfNA5zUZIQpMBvSfU3NDBEzf2
+		Теория_вероятностей_Сердобольская course:Теория_вероятностей type:video author:Сердобольская_МЛ fac:МГУ_Физфак lectures:14 hours:20 mins:30 url:https://www.youtube.com/playlist?list=PLcsjsqLLSfNA6Zt2QBaqFDR7D8N-31Vvm
+		Теория_вероятностей_Шабанов course:Теория_вероятностей type:video author:Шабанов_ДА fac:МГУ_Мехмат lectures:15 hours:19 mins:30 url:https://www.youtube.com/playlist?list=PLcsjsqLLSfNAL9WdilSoGlmhPLDj__UPd
+		Теория_вероятностей_семинары_Шкляев course:Теория_вероятностей type:video author:Шкляев_АВ fac:МГУ_Мехмат lectures:12 hours:10 url:https://www.youtube.com/playlist?list=PLcsjsqLLSfNBczMbigs0omrkhXwFpgnC4
 		Теоретическая_механика_Форш course:Теоретическая_механика type:video author:Форш_ПА fac:МГУ_Химфак lectures:15 hours:21 url:https://teach-in.ru/course/theoretical-mechanics yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNB-O0AhtSPVpiyPJu-_WwSv		
 		Теоретическая_неорганическая_химия_1_Леменовский course:Теоретическая_неорганическая_химия type:video author:Леменовский_ДА fac:МГУ_Химфак lectures:13 hours:17 url:https://teach-in.ru/course/theornotorg1 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNBWv5gqr1IUey0CcCBMhKIw
 		Теоретическая_неорганическая_химия_2_Леменовский course:Теоретическая_неорганическая_химия type:video author:Леменовский_ДА fac:МГУ_Химфак lectures:13 hours:15 url:https://teach-in.ru/course/theornotorg2 yt:https://www.youtube.com/playlist?list=PLcsjsqLLSfNCqp4S4Wm0197Us3XeBnRsl
