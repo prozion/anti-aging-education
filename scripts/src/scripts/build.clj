@@ -150,7 +150,8 @@
                             (format " (%s%s%s)"
                               (if lectures (format "%s лекций" lectures) "")
                               (if hours (format ", %s часов" hours) "")
-                              (if mins (format ", %s минут" mins) ""))
+                              ; (if mins (format ", %s минут" mins) ""))
+                              "")
                           (index-of? [:mooc] type)
                             (format " (%s%s)"
                               (if weeks (format "%s недель" weeks) "")
