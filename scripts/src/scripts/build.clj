@@ -99,10 +99,13 @@
 (def tabtree-file "../knowledge/courses.tree")
 (def readme-template-file "../templates/README.template.md")
 (def uni-track-template-file "../templates/Университетские_предметы.template.md")
+(def ml-track-template-file "../templates/ml.template.md")
 ; (def page-template-file "../templates/page.template.md")
-(def biochemistry-centered-follow-ups-file "../knowledge/biochemistry-follows.tree")
+(def biochemistry-followups "../knowledge/biochemistry-followups.tree")
+(def ml-followups "../knowledge/ml-followups.tree")
 (def readme-file "../README.md")
 (def uni-track-file "../Университетские_предметы.md")
+(def ml-track-file "../Машинное_обучение.md")
 
 (defn process-author [author]
   (-> author name (s/replace #"_" " ") (s/replace #"([A-ZА-Я])([A-ZА-Я])" "$1.$2")))
@@ -167,6 +170,7 @@
     (let [
           readme-template (slurp readme-template-file)
           uni-track-template (slurp uni-track-template-file)
+          ml-track-template (slurp ml-track-template-file)
 
           courses-ids (utils/$t биохимик.курсы *tabtree*)
           mermaid-hrefs (->> courses-ids (map make-mermaid-href) (s/join "\n  "))
@@ -226,7 +230,19 @@
           md (s/replace md "{{hrefs}}" mermaid-hrefs)
           uni-track-md md
 
-          biochemistry-links-tabtree (tabtree/parse-tab-tree biochemistry-centered-follow-ups-file)
+          ml-links-tabtree (tabtree/parse-tab-tree ml-followups)
+          ml-directed-graph (make-directed-graph [:Машинное_обучение] ml-links-tabtree)
+          mermaid-ml-nodes-ids (get-nodes-from-directed-graph ml-directed-graph)
+          mermaid-ml-nodes (->> mermaid-ml-nodes-ids (map make-mermaid-node) (s/join "\n  "))
+          mermaid-ml-arrows (make-mermaid-arrows ml-directed-graph)
+          mermaid-ml-hrefs (->> mermaid-ml-nodes-ids (map make-mermaid-href) (s/join "\n  "))
+
+          md (s/replace ml-track-template "{{nodes}}" mermaid-ml-nodes)
+          md (s/replace md "{{arrows}}" mermaid-ml-arrows)
+          md (s/replace md "{{hrefs}}" mermaid-ml-hrefs)
+          ml-track-md md
+
+          biochemistry-links-tabtree (tabtree/parse-tab-tree biochemistry-followups)
           biochemistry-directed-graph (make-directed-graph [:Биохимия_старения] biochemistry-links-tabtree)
           mermaid-biochemistry-nodes-ids (get-nodes-from-directed-graph biochemistry-directed-graph)
           mermaid-biochemistry-nodes (->> mermaid-biochemistry-nodes-ids (map make-mermaid-node) (s/join "\n  "))
@@ -291,8 +307,8 @@
                 (spit course-file course-page))))
           ]
       (spit readme-file readme-md)
+      (spit ml-track-file ml-track-md)
       (spit uni-track-file uni-track-md))))
 
 (defn run []
-  (text/titlefy "foo")
   (make-md))
