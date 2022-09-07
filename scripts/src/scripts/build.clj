@@ -232,7 +232,7 @@
           uni-track-md md
 
           ml-links-tabtree (tabtree/parse-tab-tree ml-followups)
-          ml-directed-graph (make-directed-graph [:Машинное_обучение] ml-links-tabtree)
+          ml-directed-graph (make-directed-graph [:Машинное_обучение :Численные_методы] ml-links-tabtree)
           mermaid-ml-nodes-ids (get-nodes-from-directed-graph ml-directed-graph)
           mermaid-ml-nodes (->> mermaid-ml-nodes-ids (map make-mermaid-node) (s/join "\n  "))
           mermaid-ml-arrows (make-mermaid-arrows ml-directed-graph)
